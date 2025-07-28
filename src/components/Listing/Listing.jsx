@@ -31,20 +31,20 @@ const categories = [
 ];
 
 const allProducts = [
-  { id: 1, name: "SVC L-Shaped Sofa", discount: "-15%", image: lsofa, reviews: 10, originalPrice: "₹35,000.00", discountedPrice: "₹29,750.00", category: "furniture" },
-  { id: 2, name: "SVC U-Shaped Luxury Sofa", discount: "-20%", image: usofa, reviews: 8, originalPrice: "₹50,000.00", discountedPrice: "₹40,000.00", category: "furniture" },
-  { id: 3, name: "SVC 3-Seater Fabric Sofa", discount: "-10%", image: threesofa, reviews: 15, originalPrice: "₹25,000.00", discountedPrice: "₹22,500.00", category: "furniture" },
-  { id: 4, name: "SVC Sofa Set (5 Piece)", discount: "-18%", image: setsofa, reviews: 12, originalPrice: "₹45,000.00", discountedPrice: "₹36,900.00", category: "furniture" },
-  { id: 5, name: "SVC Wooden Dining Table Set", discount: "-12%", image: diningtable, reviews: 5, originalPrice: "₹20,000.00", discountedPrice: "₹17,600.00", category: "furniture" },
-  { id: 6, name: "SVC Premium Wardrobe", discount: "-10%", image: wardrobe, reviews: 9, originalPrice: "₹15,000.00", discountedPrice: "₹13,500.00", category: "furniture" },
-  { id: 7, name: "SVC King Size Bed", discount: "-14%", image: bed, reviews: 7, originalPrice: "₹30,000.00", discountedPrice: "₹25,800.00", category: "furniture" },
-  { id: 8, name: "SVC Multi-Storage Cupboard", discount: "-10%", image: cupboard, reviews: 4, originalPrice: "₹12,000.00", discountedPrice: "₹10,800.00", category: "furniture" },
-  { id: 9, name: "SVC Smart Refrigerator", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹2,000.00", discountedPrice: "₹1,840.00", category: "home-appliances" },
-  { id: 10, name: "SVC Fully Automatic Washing Machine", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹65,000.00", discountedPrice: "₹55,300.00", category: "home-appliances" },
-  { id: 11, name: "SVC 1.5 Ton Inverter Split AC", discount: "-10%", image: ac, reviews: 0, originalPrice: "₹41,999.00", discountedPrice: "₹37,999.00", category: "home-appliances" },
-  { id: 12, name: "SVC Convection Microwave Oven", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹12,000.00", discountedPrice: "₹10,560.00", category: "home-appliances" },
-  { id: 13, name: "SVC 32\" Smart TV - Full HD", discount: "-40%", image: smarttv, reviews: 1, originalPrice: "₹24,999.00", discountedPrice: "₹14,999.00", category: "electronics" },
-  { id: 14, name: "SVC 40\" LED TV - 4K Ultra HD", discount: "-35%", image: ledtv, reviews: 5, originalPrice: "₹29,000.00", discountedPrice: "₹18,850.00", category: "electronics" },
+  { id: 1, name: "SVC L-Shaped Sofa", discount: "-15%", image: lsofa, reviews: 10, originalPrice: "₹35,000.00", discountedPrice: "₹29,750", category: "furniture" },
+  { id: 2, name: "SVC U-Shaped Luxury Sofa", discount: "-20%", image: usofa, reviews: 8, originalPrice: "₹50,000.00", discountedPrice: "₹40,000", category: "furniture" },
+  { id: 3, name: "SVC 3-Seater Fabric Sofa", discount: "-10%", image: threesofa, reviews: 15, originalPrice: "₹25,000.00", discountedPrice: "₹22,500", category: "furniture" },
+  { id: 4, name: "SVC Sofa Set (5 Piece)", discount: "-18%", image: setsofa, reviews: 12, originalPrice: "₹45,000.00", discountedPrice: "₹36,900", category: "furniture" },
+  { id: 5, name: "SVC Wooden Dining Table Set", discount: "-12%", image: diningtable, reviews: 5, originalPrice: "₹20,000.00", discountedPrice: "₹17,600", category: "furniture" },
+  { id: 6, name: "SVC Premium Wardrobe", discount: "-10%", image: wardrobe, reviews: 9, originalPrice: "₹15,000.00", discountedPrice: "₹13,500", category: "furniture" },
+  { id: 7, name: "SVC King Size Bed", discount: "-14%", image: bed, reviews: 7, originalPrice: "₹30,000.00", discountedPrice: "₹25,800", category: "furniture" },
+  { id: 8, name: "SVC Multi-Storage Cupboard", discount: "-10%", image: cupboard, reviews: 4, originalPrice: "₹12,000.00", discountedPrice: "₹10,800", category: "furniture" },
+  { id: 9, name: "SVC Smart Refrigerator", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹2,000.00", discountedPrice: "₹1,840", category: "home-appliances" },
+  { id: 10, name: "SVC Fully Automatic Washing Machine", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹65,000.00", discountedPrice: "₹55,300", category: "home-appliances" },
+  { id: 11, name: "SVC 1.5 Ton Inverter Split AC", discount: "-10%", image: ac, reviews: 0, originalPrice: "₹41,999.00", discountedPrice: "₹37,999", category: "home-appliances" },
+  { id: 12, name: "SVC Convection Microwave Oven", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹12,000.00", discountedPrice: "₹10,560", category: "home-appliances" },
+  { id: 13, name: "SVC 32\" Smart TV - Full HD", discount: "-40%", image: smarttv, reviews: 1, originalPrice: "₹24,999.00", discountedPrice: "₹14,999", category: "electronics" },
+  { id: 14, name: "SVC 40\" LED TV - 4K Ultra HD", discount: "-35%", image: ledtv, reviews: 5, originalPrice: "₹29,000.00", discountedPrice: "₹18,850", category: "electronics" },
 ];
 
 const ShoppingBagIcon = () => (

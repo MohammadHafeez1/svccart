@@ -9,21 +9,18 @@ const Checkout = () => {
   const [address, setAddress] = useState("");
 
   const handlePlaceOrder = () => {
-    const ownerPhone = "9535956247";
-
+    const whatsappNumber = "9535956247"; // Replace with your real number
     const cartDetails = cartItems
-      .map((item) => `- ${item.name} - ₹${item.discountedPrice}`)
-      .join("\r\n");
+      .map((item) => `• ${item.name} - ₹${item.discountedPrice}`)
+      .join("\n");
 
-    const message = `Hello, I'd like to place an order:\r\n\r\n${cartDetails}\r\n\r\nTotal: ₹${cartTotal.toLocaleString(
+    const message = `Hello, I'd like to place an order:\n\n${cartDetails}\n\nTotal: ₹${cartTotal.toLocaleString(
       "en-IN"
-    )}\r\n\r\nCustomer Name: ${name}\r\nContact Number: ${phone}\r\nCustomer Address: ${address}`;
+    )}\n\nCustomer Name: ${name}\nContact Number: ${phone}\nCustomer Address: ${address}`;
 
-    const url = `https://wa.me/${ownerPhone}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, "_blank");
   };
-
-  const isValidPhone = /^\d{10}$/.test(phone);
 
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
@@ -67,12 +64,14 @@ const Checkout = () => {
                 <input
                   type="tel"
                   value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  pattern="\d{10}"
+                  onChange={(e) => setPhone(e.target.value.replace(/\D/, ""))} // Only digits
                   maxLength={10}
-                  title="Please enter a 10-digit phone number"
+                  placeholder="Enter 10-digit phone number"
                   className="mt-1 block w-full border px-3 py-2 rounded"
                 />
+                {phone && phone.length !== 10 && (
+                  <p className="text-red-500 text-sm mt-1">Phone number must be exactly 10 digits.</p>
+                )}
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700">Your Address</label>
@@ -86,7 +85,7 @@ const Checkout = () => {
 
               <button
                 onClick={handlePlaceOrder}
-                disabled={!name || !isValidPhone || !address}
+                disabled={!name || phone.length !== 10 || !address}
                 className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition disabled:opacity-50"
               >
                 Place Order on WhatsApp

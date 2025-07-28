@@ -1,5 +1,3 @@
-// src/pages/SchemeJoin.jsx
-
 import React, { useState } from 'react';
 
 const SchemeJoin = () => {
@@ -14,13 +12,22 @@ const SchemeJoin = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+
+    // Allow only digits for phone
+    if (name === "phone") {
+      const digitsOnly = value.replace(/\D/g, '');
+      setForm({ ...form, phone: digitsOnly });
+    } else {
+      setForm({ ...form, [name]: value });
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const ownerWhatsAppNumber = '9535956247';
+    if (form.phone.length !== 10) return;
+
+    const whatsappNumber = '9535956247';
 
     const message = `New Scheme Join Request:
 Name: ${form.fullName}
@@ -29,10 +36,8 @@ Promoter Name: ${form.promoterName || 'N/A'}
 Promoter ID: ${form.promoterId || 'N/A'}
 Address: ${form.address}`;
 
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=${ownerWhatsAppNumber}&text=${encodedMessage}`;
-
-    window.open(whatsappUrl, '_blank');
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, "_blank");
 
     setMessageSent(true);
     setForm({
@@ -43,6 +48,8 @@ Address: ${form.address}`;
       address: '',
     });
   };
+
+  const isFormValid = form.fullName && form.phone.length === 10 && form.address;
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
@@ -66,8 +73,12 @@ Address: ${form.address}`;
             value={form.phone}
             onChange={handleChange}
             required
+            maxLength="10"
             className="w-full p-3 border rounded-md text-gray-800"
           />
+          {form.phone && form.phone.length !== 10 && (
+            <p className="text-sm text-red-600">Phone number must be exactly 10 digits.</p>
+          )}
           <input
             type="text"
             name="promoterName"
@@ -96,7 +107,8 @@ Address: ${form.address}`;
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition"
+            disabled={!isFormValid}
+            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 transition disabled:opacity-50"
           >
             Send Details via WhatsApp
           </button>
@@ -104,7 +116,7 @@ Address: ${form.address}`;
 
         {messageSent && (
           <p className="mt-4 text-green-600 text-center text-sm">
-            Message sent! Please check your WhatsApp.
+             Please send hi text if text not typed in your WhatsApp.
           </p>
         )}
       </div>

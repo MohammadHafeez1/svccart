@@ -54,7 +54,7 @@ const Navbar = () => {
           </button>
 
           {/* Logo */}
-          <Link to="/all">
+          <Link to="/">
             <img
               src={logo}
               alt="Logo"
