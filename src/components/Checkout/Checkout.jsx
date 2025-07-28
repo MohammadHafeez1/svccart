@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -9,9 +10,10 @@ const Checkout = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
+  
 
   const handlePlaceOrder = () => {
-    const ownerPhone = "9380147917"; // Replace with real number
+    const ownerPhone = "9535956247"; // Replace with real number
     const cartDetails = cartItems
       .map((item) => `• ${item.name} - ${item.discountedPrice}`)
       .join("\n");
