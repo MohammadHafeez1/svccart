@@ -20,7 +20,7 @@ const SchemeJoin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const ownerWhatsAppNumber = '9380147917';
+    const ownerWhatsAppNumber = '9535956247';
 
     const message = `
 New Scheme Join Request:
