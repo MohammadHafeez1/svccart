@@ -20,7 +20,7 @@ import SchemeJoin from "./components/Scheme/SchemeJoin";
 import SchemeBanner from "./components/Scheme/SchemeBanner";
 import PrivacyPolicy from "./components/FooterPages/PrivacyPolicy";
 import TermsOfUse from "./components/FooterPages/TermsOfUse";
-import ShippingPolicy from "./components/FooterPages/shippingPolicy";
+import ShippingPolicy from "./components/FooterPages/ShippingPolicy";
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
