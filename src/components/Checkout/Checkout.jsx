@@ -9,31 +9,21 @@ const Checkout = () => {
   const [address, setAddress] = useState("");
 
   const handlePlaceOrder = () => {
-    const ownerPhone = "9535956247"; // Replace with your number
+    const ownerPhone = "9535956247";
 
     const cartDetails = cartItems
-      .map((item) => `• ${item.name} - ₹${item.discountedPrice}`)
-      .join("\n");
+      .map((item) => `- ${item.name} - ₹${item.discountedPrice}`)
+      .join("\r\n");
 
-    const message = `Hello, I'd like to place an order:\n\n${cartDetails}\n\nTotal: ₹${cartTotal.toLocaleString(
+    const message = `Hello, I'd like to place an order:\r\n\r\n${cartDetails}\r\n\r\nTotal: ₹${cartTotal.toLocaleString(
       "en-IN"
-    )}\n\nCustomer Name: ${name}\nContact Number: ${phone}\nCustomer Address: ${address}`;
+    )}\r\n\r\nCustomer Name: ${name}\r\nContact Number: ${phone}\r\nCustomer Address: ${address}`;
 
-    const encodedMessage = encodeURIComponent(message);
-    const url = `https://wa.me/${ownerPhone}?text=${encodedMessage}`;
-
-    const isMobile = /iPhone|Android/i.test(navigator.userAgent);
-
-    if (isMobile) {
-      // Open in new tab for mobile
-      window.open(url, "_blank");
-    } else {
-      // Open in current tab for desktop with slight delay
-      setTimeout(() => {
-        window.location.href = url;
-      }, 300);
-    }
+    const url = `https://wa.me/${ownerPhone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
   };
+
+  const isValidPhone = /^\d{10}$/.test(phone);
 
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
@@ -51,10 +41,7 @@ const Checkout = () => {
           <>
             <div className="mb-6">
               {cartItems.map((item, i) => (
-                <div
-                  key={i}
-                  className="flex justify-between border-b py-2 text-gray-700"
-                >
+                <div key={i} className="flex justify-between border-b py-2 text-gray-700">
                   <span>{item.name}</span>
                   <span>₹{item.discountedPrice}</span>
                 </div>
@@ -67,9 +54,7 @@ const Checkout = () => {
 
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Full Name
-                </label>
+                <label className="block text-sm font-medium text-gray-700">Full Name</label>
                 <input
                   type="text"
                   value={name}
@@ -78,20 +63,19 @@ const Checkout = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Your Contact Number
-                </label>
+                <label className="block text-sm font-medium text-gray-700">Your Contact Number</label>
                 <input
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  pattern="\d{10}"
+                  maxLength={10}
+                  title="Please enter a 10-digit phone number"
                   className="mt-1 block w-full border px-3 py-2 rounded"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Your Address
-                </label>
+                <label className="block text-sm font-medium text-gray-700">Your Address</label>
                 <input
                   type="text"
                   value={address}
@@ -102,7 +86,7 @@ const Checkout = () => {
 
               <button
                 onClick={handlePlaceOrder}
-                disabled={!name || !phone}
+                disabled={!name || !isValidPhone || !address}
                 className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition disabled:opacity-50"
               >
                 Place Order on WhatsApp

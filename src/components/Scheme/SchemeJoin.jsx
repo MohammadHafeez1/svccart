@@ -22,18 +22,16 @@ const SchemeJoin = () => {
 
     const ownerWhatsAppNumber = '9535956247';
 
-    const message = `
-New Scheme Join Request:
------------------------
+    const message = `New Scheme Join Request:
 Name: ${form.fullName}
 Phone: ${form.phone}
-Promoter Name: ${form.promoterName}
-Promoter ID: ${form.promoterId}
-Address: ${form.address}
-    `;
+Promoter Name: ${form.promoterName || 'N/A'}
+Promoter ID: ${form.promoterId || 'N/A'}
+Address: ${form.address}`;
 
-    const encodedMessage = encodeURIComponent(message.trim());
-    const whatsappUrl = `https://wa.me/${ownerWhatsAppNumber}?text=${encodedMessage}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${ownerWhatsAppNumber}&text=${encodedMessage}`;
+
     window.open(whatsappUrl, '_blank');
 
     setMessageSent(true);
