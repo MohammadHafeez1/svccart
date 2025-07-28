@@ -1,29 +1,38 @@
 import React, { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
-
-
 
 const Checkout = () => {
   const { cartItems, cartTotal } = useCart();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
-  
 
   const handlePlaceOrder = () => {
-    const ownerPhone = "9535956247"; // Replace with real number
+    const ownerPhone = "9535956247"; // Replace with your number
+
     const cartDetails = cartItems
-      .map((item) => `• ${item.name} - ${item.discountedPrice}`)
+      .map((item) => `• ${item.name} - ₹${item.discountedPrice}`)
       .join("\n");
 
     const message = `Hello, I'd like to place an order:\n\n${cartDetails}\n\nTotal: ₹${cartTotal.toLocaleString(
       "en-IN"
-    )}\n\nCustomer Name: ${name}\nContact Number: ${phone}\nCustomer Adress: ${address}`;
+    )}\n\nCustomer Name: ${name}\nContact Number: ${phone}\nCustomer Address: ${address}`;
 
-    const url = `https://wa.me/${ownerPhone}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://wa.me/${ownerPhone}?text=${encodedMessage}`;
+
+    const isMobile = /iPhone|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Open in new tab for mobile
+      window.open(url, "_blank");
+    } else {
+      // Open in current tab for desktop with slight delay
+      setTimeout(() => {
+        window.location.href = url;
+      }, 300);
+    }
   };
 
   return (
@@ -42,9 +51,12 @@ const Checkout = () => {
           <>
             <div className="mb-6">
               {cartItems.map((item, i) => (
-                <div key={i} className="flex justify-between border-b py-2 text-gray-700">
+                <div
+                  key={i}
+                  className="flex justify-between border-b py-2 text-gray-700"
+                >
                   <span>{item.name}</span>
-                  <span>{item.discountedPrice}</span>
+                  <span>₹{item.discountedPrice}</span>
                 </div>
               ))}
               <div className="flex justify-between font-semibold text-lg mt-4">
@@ -55,7 +67,9 @@ const Checkout = () => {
 
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700">Full Name</label>
+                <label className="block text-sm font-medium text-gray-700">
+                  Full Name
+                </label>
                 <input
                   type="text"
                   value={name}
@@ -64,7 +78,9 @@ const Checkout = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">Your Contact Number</label>
+                <label className="block text-sm font-medium text-gray-700">
+                  Your Contact Number
+                </label>
                 <input
                   type="tel"
                   value={phone}
@@ -73,7 +89,9 @@ const Checkout = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">Your Address</label>
+                <label className="block text-sm font-medium text-gray-700">
+                  Your Address
+                </label>
                 <input
                   type="text"
                   value={address}
