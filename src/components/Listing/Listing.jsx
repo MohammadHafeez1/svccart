@@ -100,6 +100,8 @@ const CartIcon = () => (
   </svg>
 );
 
+// ... (Keep all imports and allProducts list as you provided above)
+
 const Listing = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -202,39 +204,46 @@ const Listing = () => {
               {filteredProducts.map((product) => (
                 <div key={product.id} className="bg-white rounded-xl shadow hover:shadow-xl transition duration-300 flex flex-col">
                   <div className="relative w-full h-48 bg-gray-50 flex items-center justify-center">
-  {product.images ? (
-    <Slider
-      dots={true}
-      arrows={false}
-      infinite={true}
-      speed={500}
-      slidesToShow={1}
-      slidesToScroll={1}
-      autoplay
-      autoplaySpeed={3000}
-      className="w-full h-full"
-    >
-      {product.images.map((img, idx) => (
-        <div key={idx} className="w-full h-48 flex justify-center items-center">
-          <img src={img} alt={`${product.name} ${idx + 1}`} className="w-full h-full object-contain" />
-        </div>
-      ))}
-    </Slider>
-  ) : (
-    <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
-  )}
-
-  <span className="absolute top-3 left-3 bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
-    {product.discount}
-  </span>
-</div>
+                    {product.images ? (
+                      <Slider
+                        dots={true}
+                        arrows={false}
+                        infinite={true}
+                        speed={500}
+                        slidesToShow={1}
+                        slidesToScroll={1}
+                        autoplay
+                        autoplaySpeed={3000}
+                        className="w-full h-full"
+                      >
+                        {product.images.map((img, idx) => (
+                          <div key={idx} className="w-full h-48 flex justify-center items-center">
+                            <img src={img} alt={`${product.name} ${idx + 1}`} className="w-full h-full object-contain" />
+                          </div>
+                        ))}
+                      </Slider>
+                    ) : (
+                      <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
+                    )}
+                    <span className="absolute top-3 left-3 bg-green-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                      {product.discount}
+                    </span>
+                  </div>
 
                   <div className="p-4 flex flex-col flex-grow">
                     <h3 className="text-sm font-semibold text-gray-800 mb-1 line-clamp-2">{product.name}</h3>
                     <p className="text-xs text-gray-600 mb-2 line-clamp-2">{product.description}</p>
-                    <div className="flex items-center mb-2">
+                    <div className="flex items-center mb-1">
                       <span className="text-sm text-gray-500 line-through mr-2">{product.originalPrice}</span>
                       <span className="text-lg font-bold text-red-600">{product.discountedPrice}</span>
+                    </div>
+
+                    {/* Stock and review section */}
+                    <div className="flex justify-between items-center text-xs text-gray-600 mb-2">
+                      <div className="flex items-center gap-1 text-yellow-500">
+                        {"★".repeat(5)}<span className="text-gray-500 ml-1">({product.reviews} Reviews)</span>
+                      </div>
+                      <span className="text-green-600 font-semibold">Stock</span>
                     </div>
 
                     <div className="flex items-center justify-between mb-2 gap-2">
@@ -280,3 +289,4 @@ const Listing = () => {
 };
 
 export default Listing;
+
