@@ -77,7 +77,7 @@ const allProducts = [
   { id: 8, name: "SVC Multi-Storage Cupboard", description: "Compact cupboard with multiple storage sections.", discount: "-10%", image: cupboard,images: [cupboard, cupboard2, cupboard3], reviews: 4, originalPrice: "₹16,665.56", discountedPrice: "₹14,999", category: "furniture" },
   { id: 9, name: "SVC Smart Refrigerator", description: "Energy-efficient double-door refrigerator.", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹59,391.30", discountedPrice: "₹54,840", category: "home-appliances" },
   { id: 10, name: "SVC Fully Automatic Washing Machine", description: "Top-loading washing machine with smart features.", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹65,058.82", discountedPrice: "₹55,300", category: "home-appliances" },
-  { id: 11, name: "SVC 1.5 Ton Inverter Split AC", description: "Power-saving AC with rapid cooling and remote.", discount: "-10%", image: ac, reviews: 0, originalPrice: "₹42,221.11", discountedPrice: "₹37,999", category: "home-appliances" },
+  { id: 11, name: "SVC 1.5 Ton Inverter Split AC", description: "Power-saving AC with rapid cooling and remote.", discount: "-10%", image: ac, reviews: 10, originalPrice: "₹42,221.11", discountedPrice: "₹37,999", category: "home-appliances" },
   { id: 12, name: "SVC Convection Microwave Oven", description: "Multi-function convection microwave for quick meals.", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹14,500.00", discountedPrice: "₹12,999", category: "home-appliances" },
   { id: 13, name: "SVC 32\" Smart TV - Full HD", description: "Smart TV with HD display and built-in streaming.", discount: "-40%", image: smarttv,images: [smarttv, tv2, tv3], reviews: 1, originalPrice: "₹44,998.33", discountedPrice: "₹26,999", category: "electronics" },
   { id: 14, name: "SVC 40\" LED TV - 4K Ultra HD", description: "Crisp 4K UHD display with vibrant colors.", discount: "-35%", image: ledtv,images: [ledtv, ledtv2, ledtv3], reviews: 5, originalPrice: "₹59,998.46", discountedPrice: "₹38,999", category: "electronics" },
@@ -241,7 +241,7 @@ const Listing = () => {
                     {/* Stock and review section */}
                     <div className="flex justify-between items-center text-xs text-gray-600 mb-2">
                       <div className="flex items-center gap-1 text-yellow-500">
-                        {"★".repeat(5)}<span className="text-gray-500 ml-1">({product.reviews} Reviews)</span>
+                        {"★".repeat(4)}<span className="text-gray-500 ml-1">({product.reviews} Reviews)</span>
                       </div>
                       <span className="text-green-600 font-semibold">Stock</span>
                     </div>
