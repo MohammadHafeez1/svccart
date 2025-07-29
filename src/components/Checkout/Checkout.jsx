@@ -7,6 +7,7 @@ const Checkout = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
+  const [messageSent, setMessageSent] = useState(false); // Track if message was sent
 
   const handlePlaceOrder = () => {
     const whatsappNumber = "9535956247"; // Replace with your real number
@@ -19,7 +20,15 @@ const Checkout = () => {
     )}\n\nCustomer Name: ${name}\nContact Number: ${phone}\nCustomer Address: ${address}`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp URL and assume success
     window.open(whatsappURL, "_blank");
+
+    // Simulate message sending failure or success
+    setMessageSent(false); // Reset messageSent state before retry
+    setTimeout(() => {
+      setMessageSent(true); // Simulate a retry option after some time (for demo purposes)
+    }, 5000);
   };
 
   return (
@@ -90,6 +99,12 @@ const Checkout = () => {
               >
                 Place Order on WhatsApp
               </button>
+
+              {messageSent && (
+                <p className="mt-4 text-green-600 text-center text-sm">
+                  Please send a "Hi" message to the WhatsApp number and try again if you face any issue in placing the order or scheme request.
+                </p>
+              )}
             </div>
           </>
         )}

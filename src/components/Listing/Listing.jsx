@@ -39,7 +39,7 @@ const allProducts = [
   { id: 6, name: "SVC Premium Wardrobe", discount: "-10%", image: wardrobe, reviews: 9, originalPrice: "₹15,000.00", discountedPrice: "₹13,500", category: "furniture" },
   { id: 7, name: "SVC King Size Bed", discount: "-14%", image: bed, reviews: 7, originalPrice: "₹30,000.00", discountedPrice: "₹25,800", category: "furniture" },
   { id: 8, name: "SVC Multi-Storage Cupboard", discount: "-10%", image: cupboard, reviews: 4, originalPrice: "₹12,000.00", discountedPrice: "₹10,800", category: "furniture" },
-  { id: 9, name: "SVC Smart Refrigerator", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹2,000.00", discountedPrice: "₹1,840", category: "home-appliances" },
+  { id: 9, name: "SVC Smart Refrigerator", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹60,000.00", discountedPrice: "₹54,840", category: "home-appliances" },
   { id: 10, name: "SVC Fully Automatic Washing Machine", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹65,000.00", discountedPrice: "₹55,300", category: "home-appliances" },
   { id: 11, name: "SVC 1.5 Ton Inverter Split AC", discount: "-10%", image: ac, reviews: 0, originalPrice: "₹41,999.00", discountedPrice: "₹37,999", category: "home-appliances" },
   { id: 12, name: "SVC Convection Microwave Oven", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹12,000.00", discountedPrice: "₹10,560", category: "home-appliances" },

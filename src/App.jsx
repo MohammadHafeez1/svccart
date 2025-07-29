@@ -21,6 +21,8 @@ import SchemeBanner from "./components/Scheme/SchemeBanner";
 import PrivacyPolicy from "./components/FooterPages/PrivacyPolicy";
 import TermsOfUse from "./components/FooterPages/TermsOfUse";
 import ShippingPolicy from "./components/FooterPages/ShippingPolicy";
+import TermsAndConditions from "./components/FooterPages/TermsAndConditions";
+
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -67,6 +69,7 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/shipping-policy" element={<ShippingPolicy/>} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           
           <Route path="/footer" element={<Footer />} />
           
