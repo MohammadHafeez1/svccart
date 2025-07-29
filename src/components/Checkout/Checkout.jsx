@@ -102,7 +102,7 @@ const Checkout = () => {
 
               {messageSent && (
                 <p className="mt-4 text-green-600 text-center text-sm">
-                  Please send a "Hi" message to the WhatsApp number and try again if you face any issue in placing the order or scheme request.
+                  Please send a "Hi" message to the WhatsApp number and try again if you face any issue in placing the order or login request.
                 </p>
               )}
             </div>

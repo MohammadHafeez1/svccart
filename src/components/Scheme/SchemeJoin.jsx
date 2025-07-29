@@ -29,7 +29,7 @@ const SchemeJoin = () => {
 
     const whatsappNumber = '919108896247';
 
-    const message = `New Scheme Join Request:
+    const message = `Login Request:
 Name: ${form.fullName}
 Phone: ${form.phone}
 Promoter Name: ${form.promoterName || 'N/A'}

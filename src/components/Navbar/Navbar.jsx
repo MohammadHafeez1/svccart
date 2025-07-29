@@ -38,7 +38,7 @@ const Navbar = () => {
         <span>Welcome to Smart Vision Corporation Group</span>
         <div className="flex gap-4">
           <Link to="/footer" className="hover:text-yellow-600">📧 Contact</Link>
-          <Link to="/scheme" className="hover:text-yellow-600">🔐 Register for scheme</Link>
+          <Link to="/scheme" className="hover:text-yellow-600">🔐 Login</Link>
         </div>
       </div>
 
