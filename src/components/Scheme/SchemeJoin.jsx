@@ -27,7 +27,7 @@ const SchemeJoin = () => {
 
     if (form.phone.length !== 10) return;
 
-    const whatsappNumber = '9535956247';
+    const whatsappNumber = '919108896247';
 
     const message = `New Scheme Join Request:
 Name: ${form.fullName}
@@ -116,7 +116,7 @@ Address: ${form.address}`;
 
         {messageSent && (
           <p className="mt-4 text-green-600 text-center text-sm">
-             Please send hi text if text not typed in your WhatsApp.
+             Please send hi message to svc whatsapp and try agin if any issue in placing order or scheme request.
           </p>
         )}
       </div>

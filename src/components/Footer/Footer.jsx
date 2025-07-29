@@ -1,6 +1,7 @@
 import React from "react";
-import Logo from "../../assets/logo1.png";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/logo1.png";
+import PaymentLogos from "../../assets/payment-methods.png"; // Rename your screenshot to this
 
 const Footer = () => {
   return (
@@ -39,11 +40,9 @@ const Footer = () => {
             <p>
               <strong>Head Office:</strong>
               <br />
-              #03, 2nd Floor, Creek Galaxy,
+              Creek Galaxy,
               <br />
-              Opposite Indiana Hospital,
-              <br />
-              Pumpwell, Mangalore - 575002
+              Pumpwell, Mangalore 
               <br />
               <a
                 href="https://maps.app.goo.gl/SmG2zdfn1hcsWUbE9"
@@ -130,7 +129,16 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+      {/* Payment Logos */}
+      <div className="mt-10 flex justify-center">
+        <img
+          src={PaymentLogos}
+          alt="Payment Methods"
+          className="max-w-full h-auto w-72 sm:w-96 object-contain"
+        />
+      </div>
+
+      {/* Footer Bottom Bar */}
       <div className="mt-10 pt-6 border-t border-gray-300 text-center text-xs text-gray-500">
         &copy; <span className="text-lime-600 font-semibold">SvcCart</span> 2025. All rights reserved.
       </div>

@@ -10,7 +10,7 @@ const Checkout = () => {
   const [messageSent, setMessageSent] = useState(false); // Track if message was sent
 
   const handlePlaceOrder = () => {
-    const whatsappNumber = "9535956247"; // Replace with your real number
+    const whatsappNumber = "919108896247"; // Replace with your real number
     const cartDetails = cartItems
       .map((item) => `• ${item.name} - ₹${item.discountedPrice}`)
       .join("\n");
@@ -20,14 +20,12 @@ const Checkout = () => {
     )}\n\nCustomer Name: ${name}\nContact Number: ${phone}\nCustomer Address: ${address}`;
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    
-    // Open WhatsApp URL and assume success
+
     window.open(whatsappURL, "_blank");
 
-    // Simulate message sending failure or success
-    setMessageSent(false); // Reset messageSent state before retry
+    setMessageSent(false); // Reset state before retry
     setTimeout(() => {
-      setMessageSent(true); // Simulate a retry option after some time (for demo purposes)
+      setMessageSent(true);
     }, 5000);
   };
 
@@ -65,6 +63,7 @@ const Checkout = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  placeholder="Enter your full name"
                   className="mt-1 block w-full border px-3 py-2 rounded"
                 />
               </div>
@@ -73,9 +72,9 @@ const Checkout = () => {
                 <input
                   type="tel"
                   value={phone}
-                  onChange={(e) => setPhone(e.target.value.replace(/\D/, ""))} // Only digits
+                  onChange={(e) => setPhone(e.target.value.replace(/\D/, ""))}
                   maxLength={10}
-                  placeholder="Enter 10-digit phone number"
+                  placeholder="Enter 10-digit mobile number"
                   className="mt-1 block w-full border px-3 py-2 rounded"
                 />
                 {phone && phone.length !== 10 && (
@@ -88,6 +87,7 @@ const Checkout = () => {
                   type="text"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
+                  placeholder="Enter your complete delivery address"
                   className="mt-1 block w-full border px-3 py-2 rounded"
                 />
               </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo7.png';
 import { useCart } from '../../context/CartContext';
 import { useSearch } from '../../context/SearchContext';
 import { Link, useNavigate } from 'react-router-dom';

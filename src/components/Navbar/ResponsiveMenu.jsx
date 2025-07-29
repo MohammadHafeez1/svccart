@@ -19,9 +19,9 @@ const ResponsiveMenu = () => {
 
   const navItems = [
     { path: "/", label: "Home", icon: "🏠" },
-    { path: "/all-categories", label: "Products", icon: "📂" },
+    { path: "/all-categories", label: "Catalog", icon: "📂" },
     { path: "/cart", label: "Cart", icon: "🛒" },
-    { path: "/scheme", label: "Join Scheme", icon: "👤" },
+    { path: "/scheme", label: "Account", icon: "👤" },
   ];
 
   return (
