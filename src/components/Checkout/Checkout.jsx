@@ -15,7 +15,7 @@ const Checkout = () => {
       .map((item) => `• ${item.name} - ₹${item.discountedPrice}`)
       .join("\n");
 
-    const message = `Hello, I'd like to place an order:\n\n${cartDetails}\n\nTotal: ₹${cartTotal.toLocaleString(
+    const message = `Hello, I'd like to place an order:\n\n${cartDetails}\n\nTotal: ${cartTotal.toLocaleString(
       "en-IN"
     )}\n\nCustomer Name: ${name}\nContact Number: ${phone}\nCustomer Address: ${address}`;
 

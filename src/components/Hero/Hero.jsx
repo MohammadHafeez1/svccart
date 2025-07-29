@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import slide1 from '../../assets/slide1.jpg'; // Furniture
 import slide2 from '../../assets/slide2.jpg'; // Home Appliances
-import slide3 from '../../assets/slide3.jpg'; // Electronics
+import slide3 from '../../assets/slide3.jpg';
+import slide4 from '../../assets/Hero.jpg';
+import slide5 from '../../assets/Hero5.jpg';
+import slide6 from '../../assets/Hero6.jpg';
+import slide7 from '../../assets/Hero7.jpg';
+import slide8 from '../../assets/Hero8.jpg'; // Electronics
 import offer1 from '../../assets/offer1.jpg'; // Replace with real offer image
 import offer2 from '../../assets/offer2.jpg'; // Replace with real offer image
 
@@ -32,6 +37,51 @@ const slides = [
     buttonLink: "/electronics",
     bgColor: "bg-[#eef6f7]",
     buttonColor: "bg-blue-600"
+  },
+  {
+    title: "Modern Furniture",
+    description: "Style and comfort for every room in your home.",
+    image: slide4,
+    buttonText: "Shop Furniture",
+    buttonLink: "/furniture",
+    bgColor: "bg-[#fef5ef]",
+    buttonColor: "bg-red-600"
+  },
+  {
+    title: "Smart Home Appliances",
+    description: "Upgrade your home with the latest smart appliances.",
+    image: slide5,
+    buttonText: "Explore Appliances",
+    buttonLink: "/home-appliances",
+    bgColor: "bg-[#f4f4f4]",
+    buttonColor: "bg-gray-800"
+  },
+  {
+    title: "Latest Electronics",
+    description: "Discover the newest tech to power your lifestyle.",
+    image: slide6,
+    buttonText: "Browse Electronics",
+    buttonLink: "/electronics",
+    bgColor: "bg-[#eef6f7]",
+    buttonColor: "bg-blue-600"
+  },
+  {
+    title: "Modern Furniture",
+    description: "Style and comfort for every room in your home.",
+    image: slide7,
+    buttonText: "Shop Furniture",
+    buttonLink: "/furniture",
+    bgColor: "bg-[#fef5ef]",
+    buttonColor: "bg-red-600"
+  },
+  {
+    title: "Smart Home Appliances",
+    description: "Upgrade your home with the latest smart appliances.",
+    image: slide8,
+    buttonText: "Explore Appliances",
+    buttonLink: "/home-appliances",
+    bgColor: "bg-[#f4f4f4]",
+    buttonColor: "bg-gray-800"
   }
 ];
 

@@ -1,16 +1,17 @@
 // src/pages/Cart/Cart.js
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // ✅ added useNavigate
 import { useCart } from "../../context/CartContext";
 import couponImage from "../../assets/coupon.jpg";
 
 const Cart = () => {
   const { cartItems, removeFromCart, updateQuantity, cartTotal } = useCart();
   const [couponApplied, setCouponApplied] = useState(false);
+  const navigate = useNavigate(); // ✅ initialize navigate
 
   const handleApplyCoupon = () => {
-    setCouponApplied(true); // Only show success message, no redirect
+    navigate("/scheme"); // ✅ redirect to /scheme page
   };
 
   return (
@@ -81,26 +82,18 @@ const Cart = () => {
                 />
               </div>
               <div className="w-full md:w-1/2 flex flex-col justify-center">
-                {!couponApplied ? (
-                  <>
-                    <h4 className="text-lg font-medium text-gray-800 mb-2">
-                      Apply for Coupon
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-4">
-                      Get exclusive discounts with our limited-time coupons.
-                    </p>
-                    <button
-                      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-max"
-                      onClick={handleApplyCoupon}
-                    >
-                      Apply for Giveaway Coupon
-                    </button>
-                  </>
-                ) : (
-                  <div className="text-green-600 font-semibold text-md">
-                    🎉 Coupon successfully applied! Our team will contact you soon.
-                  </div>
-                )}
+                <h4 className="text-lg font-medium text-gray-800 mb-2">
+                  Apply for Coupon
+                </h4>
+                <p className="text-sm text-gray-600 mb-4">
+                  Get exclusive discounts with our limited-time coupons.
+                </p>
+                <button
+                  className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-max"
+                  onClick={handleApplyCoupon}
+                >
+                  Apply for Giveaway Coupon
+                </button>
               </div>
             </div>
 

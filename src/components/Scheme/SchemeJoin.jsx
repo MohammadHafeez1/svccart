@@ -54,7 +54,7 @@ Address: ${form.address}`;
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="bg-white p-6 rounded-xl shadow-md w-full max-w-lg">
-        <h2 className="text-2xl font-bold mb-4 text-center text-blue-700">Join the Scheme</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center text-blue-700">Login</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input

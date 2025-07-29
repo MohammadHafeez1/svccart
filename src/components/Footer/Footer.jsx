@@ -44,14 +44,6 @@ const Footer = () => {
               <br />
               Pumpwell, Mangalore 
               <br />
-              <a
-                href="https://maps.app.goo.gl/SmG2zdfn1hcsWUbE9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline"
-              >
-                View on Google Maps
-              </a>
             </p>
           </div>
         </div>
@@ -88,24 +80,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Services */}
-            <div className="flex-1 min-w-[120px]">
-              <h3 className="text-base font-semibold text-gray-800 mb-3">
-                Our Services
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="/scheme" className="hover:underline">
-                    Join SVC Scheme
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/all" className="hover:underline">
-                    New Arrivals
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            
 
             {/* Tags */}
             <div className="flex-1 min-w-[120px]">
