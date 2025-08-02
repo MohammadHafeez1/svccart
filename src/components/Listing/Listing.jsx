@@ -55,6 +55,9 @@ import tv2 from "../../assets/tv2.jpg";
 import tv3 from "../../assets/tv3.jpg";
 import ledtv2 from "../../assets/ledtv3.jpg";
 import ledtv3 from "../../assets/ledtv3.jpg";
+import bat1 from "../../assets/battery3.jpg";
+import bat2 from "../../assets/battery2.jpg";
+import bat3 from "../../assets/battery3.jpg";
 
 
 
@@ -67,20 +70,20 @@ const categories = [
 ];
 
 const allProducts = [
-  { id: 1, name: "SVC L-Shaped Sofa", description: "Comfortable L-shaped sofa perfect for corner spaces.", discount: "-15%", image: lsofa,images: [lsofa, sofa2, sofa3],  reviews: 10, originalPrice: "₹63,529.41", discountedPrice: "₹54,000", category: "furniture" },
-  { id: 2, name: "SVC U-Shaped Luxury Sofa", description: "Spacious U-shaped sofa with plush cushions.", discount: "-20%", image: usofa,images: [usofa, usofa2, usofa3], reviews: 8, originalPrice: "₹1,37,500.00", discountedPrice: "₹1,10,000", category: "furniture" },
-  { id: 3, name: "SVC 3-Seater Fabric Sofa", description: "Stylish and cozy 3-seater fabric sofa.", discount: "-10%", image: threesofa,images: [threesofa, threesofa2, threesofa3], reviews: 15, originalPrice: "₹32,221.11", discountedPrice: "₹28,999", category: "furniture" },
-  { id: 4, name: "SVC Sofa Set (5 Piece)", description: "Complete 5-piece sofa set with modern design.", discount: "-18%", image: setsofa,images: [setsofa, setsofa2, setsofa3], reviews: 12, originalPrice: "₹91,463.41", discountedPrice: "₹74,999", category: "furniture" },
-  { id: 5, name: "SVC Wooden Dining Table Set", description: "Elegant 6-seater dining table with chairs.", discount: "-12%", image: diningtable,images: [diningtable, diningtable2, diningtable3], reviews: 5, originalPrice: "₹45,453.41", discountedPrice: "₹39,999", category: "furniture" },
-  { id: 6, name: "SVC Premium Wardrobe", description: "Spacious wardrobe with shelves and mirror.", discount: "-10%", image: wardrobe,images: [wardrobe, wardrobe2, wardrobe3], reviews: 9, originalPrice: "₹48,887.78", discountedPrice: "₹43,999", category: "furniture" },
-  { id: 7, name: "SVC King Size Bed", description: "Luxury king-size bed with strong wooden frame.", discount: "-14%", image: bed,images: [bed, bed2, bed3], reviews: 7, originalPrice: "₹37,209.30", discountedPrice: "₹32,000", category: "furniture" },
-  { id: 8, name: "SVC Multi-Storage Cupboard", description: "Compact cupboard with multiple storage sections.", discount: "-10%", image: cupboard,images: [cupboard, cupboard2, cupboard3], reviews: 4, originalPrice: "₹16,665.56", discountedPrice: "₹14,999", category: "furniture" },
+  { id: 1, name: "SVC L-Shaped Sofa", description: "Comfortable L-shaped sofa perfect for corner spaces.", discount: "-15%", image: lsofa, images: [lsofa, sofa2, sofa3], reviews: 10, originalPrice: "₹63,529.41", discountedPrice: "₹54,000", category: "furniture" },
+  { id: 2, name: "SVC U-Shaped Luxury Sofa", description: "Spacious U-shaped sofa with plush cushions.", discount: "-20%", image: usofa, images: [usofa, usofa2, usofa3], reviews: 8, originalPrice: "₹1,37,500.00", discountedPrice: "₹1,10,000", category: "furniture" },
+  { id: 3, name: "SVC 3-Seater Fabric Sofa", description: "Stylish and cozy 3-seater fabric sofa.", discount: "-10%", image: threesofa, images: [threesofa, threesofa2, threesofa3], reviews: 15, originalPrice: "₹32,221.11", discountedPrice: "₹28,999", category: "furniture" },
+  { id: 4, name: "SVC Sofa Set (5 Piece)", description: "Complete 5-piece sofa set with modern design.", discount: "-18%", image: setsofa, images: [setsofa, setsofa2, setsofa3], reviews: 12, originalPrice: "₹91,463.41", discountedPrice: "₹74,999", category: "furniture" },
+  { id: 5, name: "SVC Wooden Dining Table Set", description: "Elegant 6-seater dining table with chairs.", discount: "-12%", image: diningtable, images: [diningtable, diningtable2, diningtable3], reviews: 5, originalPrice: "₹45,453.41", discountedPrice: "₹39,999", category: "furniture" },
+  { id: 6, name: "SVC Premium Wardrobe", description: "Spacious wardrobe with shelves and mirror.", discount: "-10%", image: wardrobe, images: [wardrobe, wardrobe2, wardrobe3], reviews: 9, originalPrice: "₹48,887.78", discountedPrice: "₹43,999", category: "furniture" },
+  { id: 7, name: "SVC King Size Bed", description: "Luxury king-size bed with strong wooden frame.", discount: "-14%", image: bed, images: [bed, bed2, bed3], reviews: 7, originalPrice: "₹37,209.30", discountedPrice: "₹32,000", category: "furniture" },
+  { id: 8, name: "SVC Multi-Storage Cupboard", description: "Compact cupboard with multiple storage sections.", discount: "-10%", image: cupboard, images: [cupboard, cupboard2, cupboard3], reviews: 4, originalPrice: "₹16,665.56", discountedPrice: "₹14,999", category: "furniture" },
   { id: 9, name: "SVC Smart Refrigerator", description: "Energy-efficient double-door refrigerator.", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹59,391.30", discountedPrice: "₹54,840", category: "home-appliances" },
   { id: 10, name: "SVC Fully Automatic Washing Machine", description: "Top-loading washing machine with smart features.", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹65,058.82", discountedPrice: "₹55,300", category: "home-appliances" },
   { id: 11, name: "SVC 1.5 Ton Inverter Split AC", description: "Power-saving AC with rapid cooling and remote.", discount: "-10%", image: ac, reviews: 10, originalPrice: "₹42,221.11", discountedPrice: "₹37,999", category: "home-appliances" },
   { id: 12, name: "SVC Convection Microwave Oven", description: "Multi-function convection microwave for quick meals.", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹14,500.00", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 13, name: "SVC 32\" Smart TV - Full HD", description: "Smart TV with HD display and built-in streaming.", discount: "-40%", image: smarttv,images: [smarttv, tv2, tv3], reviews: 1, originalPrice: "₹44,998.33", discountedPrice: "₹26,999", category: "electronics" },
-  { id: 14, name: "SVC 40\" LED TV - 4K Ultra HD", description: "Crisp 4K UHD display with vibrant colors.", discount: "-35%", image: ledtv,images: [ledtv, ledtv2, ledtv3], reviews: 5, originalPrice: "₹59,998.46", discountedPrice: "₹38,999", category: "electronics" },
+  { id: 13, name: "SVC 32\" Smart TV - Full HD", description: "Smart TV with HD display and built-in streaming.", discount: "-40%", image: smarttv, images: [smarttv, tv2, tv3], reviews: 1, originalPrice: "₹44,998.33", discountedPrice: "₹26,999", category: "electronics" },
+  { id: 14, name: "SVC 40\" LED TV - 4K Ultra HD", description: "Crisp 4K UHD display with vibrant colors.", discount: "-35%", image: ledtv, images: [ledtv, ledtv2, ledtv3], reviews: 5, originalPrice: "₹59,998.46", discountedPrice: "₹38,999", category: "electronics" },
   { id: 15, name: "SVC Kent Advanced Water Purifier", description: "Removes 99.9% impurities with RO+UV tech.", discount: "-18%", image: waterpurifier, reviews: 6, originalPrice: "₹27,926.83", discountedPrice: "₹22,499", category: "home-appliances" },
   { id: 16, name: "SVC 3-Burner Gas Stove", description: "Toughened glass gas stove with 3 burners.", discount: "-15%", image: gasstove, reviews: 5, originalPrice: "₹9,410.59", discountedPrice: "₹7,999", category: "home-appliances" },
   { id: 17, name: "SVC Powerful Mixer Grinder", description: "High-speed mixer grinder with 3 jars.", discount: "-20%", image: mixer, reviews: 4, originalPrice: "₹9,998.75", discountedPrice: "₹7,999", category: "home-appliances" },
@@ -91,7 +94,13 @@ const allProducts = [
   { id: 22, name: "Stainless Steel Cookware Combo (5 Pc)", description: "Premium quality stainless steel cookware for healthy cooking.", discount: "-28%", image: steelcombo, reviews: 8, originalPrice: "₹16,665.28", discountedPrice: "₹11,999", category: "home-appliances" },
   { id: 23, name: "Kitchen Cooking Combo – Pans & Pots Set", description: "Complete set of kitchen essentials for everyday use.", discount: "-30%", image: cookware, reviews: 10, originalPrice: "₹14,000.00", discountedPrice: "₹10,999", category: "home-appliances" },
   { id: 24, name: "Nonstick Cookware Combo Set", description: "Nonstick pans and pots combo – easy cooking and cleaning.", discount: "-26%", image: nonstick, reviews: 7, originalPrice: "₹11,729.73", discountedPrice: "₹7,999", category: "home-appliances" },
+  
+  // ✅ Added Batteries
+  { id: 25, name: "OKAYA PowerON Inverter Battery", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-34%", image: bat1, reviews: 262, originalPrice: "₹18,700", discountedPrice: "₹18,499", category: "electronics" },
+  { id: 26, name: "OKAYA PRO Power OPTT19054", description: "160Ah Tall Tubular Inverter Battery for Home, Office & Shop.", discount: "-32%", image: bat2, reviews: 167, originalPrice: "₹19,900", discountedPrice: "₹20,100", category: "electronics" },
+  { id: 27, name: "OKAYA PowerON OPSJT19048", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-36%", image: bat3, reviews: 26, originalPrice: "₹18,700", discountedPrice: "₹18,000", category: "electronics" }
 ];
+
 
 
 const CartIcon = () => (
