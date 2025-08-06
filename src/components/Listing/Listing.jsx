@@ -23,6 +23,7 @@ import bed3 from "../../assets/bed3.jpg";
 import cupboard from "../../assets/cupboard.jpg";
 import Refrigerator from "../../assets/refirigerator.jpg";
 import washingmachine from "../../assets/washingmachine.jpg";
+import washingmachine2 from "../../assets/washingmachine2.jpg";
 import ac from "../../assets/ac.jpg";
 import oven from "../../assets/oven.jpg";
 import smarttv from "../../assets/smart.jpg";
@@ -79,27 +80,35 @@ const allProducts = [
   { id: 7, name: "SVC King Size Bed", description: "Luxury king-size bed with strong wooden frame.", discount: "-14%", image: bed, images: [bed, bed2, bed3], reviews: 7, originalPrice: "₹37,209.30", discountedPrice: "₹32,000", category: "furniture" },
   { id: 8, name: "SVC Multi-Storage Cupboard", description: "Compact cupboard with multiple storage sections.", discount: "-10%", image: cupboard, images: [cupboard, cupboard2, cupboard3], reviews: 4, originalPrice: "₹16,665.56", discountedPrice: "₹14,999", category: "furniture" },
   { id: 9, name: "SVC Smart Refrigerator", description: "Energy-efficient double-door refrigerator.", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹59,391.30", discountedPrice: "₹54,840", category: "home-appliances" },
-  { id: 10, name: "SVC Fully Automatic Washing Machine", description: "Top-loading washing machine with smart features.", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹65,058.82", discountedPrice: "₹55,300", category: "home-appliances" },
-  { id: 11, name: "SVC 1.5 Ton Inverter Split AC", description: "Power-saving AC with rapid cooling and remote.", discount: "-10%", image: ac, reviews: 10, originalPrice: "₹42,221.11", discountedPrice: "₹37,999", category: "home-appliances" },
-  { id: 12, name: "SVC Convection Microwave Oven", description: "Multi-function convection microwave for quick meals.", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹14,500.00", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 13, name: "SVC 32\" Smart TV - Full HD", description: "Smart TV with HD display and built-in streaming.", discount: "-40%", image: smarttv, images: [smarttv, tv2, tv3], reviews: 1, originalPrice: "₹44,998.33", discountedPrice: "₹26,999", category: "electronics" },
-  { id: 14, name: "SVC 40\" LED TV - 4K Ultra HD", description: "Crisp 4K UHD display with vibrant colors.", discount: "-35%", image: ledtv, images: [ledtv, ledtv2, ledtv3], reviews: 5, originalPrice: "₹59,998.46", discountedPrice: "₹38,999", category: "electronics" },
-  { id: 15, name: "SVC Kent Advanced Water Purifier", description: "Removes 99.9% impurities with RO+UV tech.", discount: "-18%", image: waterpurifier, reviews: 6, originalPrice: "₹27,926.83", discountedPrice: "₹22,499", category: "home-appliances" },
-  { id: 16, name: "SVC 3-Burner Gas Stove", description: "Toughened glass gas stove with 3 burners.", discount: "-15%", image: gasstove, reviews: 5, originalPrice: "₹9,410.59", discountedPrice: "₹7,999", category: "home-appliances" },
-  { id: 17, name: "SVC Powerful Mixer Grinder", description: "High-speed mixer grinder with 3 jars.", discount: "-20%", image: mixer, reviews: 4, originalPrice: "₹9,998.75", discountedPrice: "₹7,999", category: "home-appliances" },
-  { id: 18, name: "SVC High-Speed Grinder with Scrapper", description: "Durable and efficient grinder for daily kitchen use.", discount: "-18%", image: grinder, reviews: 6, originalPrice: "₹15,853.66", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 19, name: "SVC Mountain Gear Bicycle", description: "Sturdy gear cycle ideal for both city and trail riding.", discount: "-25%", image: cycle, reviews: 4, originalPrice: "₹17,332.00", discountedPrice: "₹12,999", category: "electronics" },
-  { id: 20, name: "SVC TurboCool Air Cooler", description: "Powerful air cooler with 45L tank capacity.", discount: "-20%", image: aircooler, reviews: 5, originalPrice: "₹16,248.75", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 21, name: "SVC Aqua Water Purifier RO+UV", description: "Advanced RO+UV purification with mineral booster.", discount: "-22%", image: purifier, reviews: 3, originalPrice: "₹16,663.46", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 22, name: "Stainless Steel Cookware Combo (5 Pc)", description: "Premium quality stainless steel cookware for healthy cooking.", discount: "-28%", image: steelcombo, reviews: 8, originalPrice: "₹16,665.28", discountedPrice: "₹11,999", category: "home-appliances" },
-  { id: 23, name: "Kitchen Cooking Combo – Pans & Pots Set", description: "Complete set of kitchen essentials for everyday use.", discount: "-30%", image: cookware, reviews: 10, originalPrice: "₹14,000.00", discountedPrice: "₹10,999", category: "home-appliances" },
-  { id: 24, name: "Nonstick Cookware Combo Set", description: "Nonstick pans and pots combo – easy cooking and cleaning.", discount: "-26%", image: nonstick, reviews: 7, originalPrice: "₹11,729.73", discountedPrice: "₹7,999", category: "home-appliances" },
-  
-  // ✅ Added Batteries
-  { id: 25, name: "OKAYA PowerON Inverter Battery", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-34%", image: bat1, reviews: 262, originalPrice: "₹18,700", discountedPrice: "₹18,499", category: "electronics" },
-  { id: 26, name: "OKAYA PRO Power OPTT19054", description: "160Ah Tall Tubular Inverter Battery for Home, Office & Shop.", discount: "-32%", image: bat2, reviews: 167, originalPrice: "₹19,900", discountedPrice: "₹20,100", category: "electronics" },
-  { id: 27, name: "OKAYA PowerON OPSJT19048", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-36%", image: bat3, reviews: 26, originalPrice: "₹18,700", discountedPrice: "₹18,000", category: "electronics" }
+
+  // UPDATED id 10 -> Semi-Automatic Washing Machine (discountedPrice ₹27,000)
+  { id: 10, name: "SVC Semi-Automatic Washing Machine", description: "Top-loading semi-automatic washing machine with efficient water use.", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹31,764.71", discountedPrice: "₹27,000", category: "home-appliances" },
+
+  // NEW item inserted at id 11 -> Fully Automatic Washing Machine (discountedPrice ₹65,000)
+  { id: 11, name: "SVC Fully Automatic Washing Machine", description: "Top-loading fully automatic washing machine with smart features.", discount: "-15%", image: washingmachine2, reviews: 12, originalPrice: "₹76,470.59", discountedPrice: "₹65,000", category: "home-appliances" },
+
+  // The rest of the items shifted +1 on id compared to original
+  { id: 12, name: "SVC 1.5 Ton Inverter Split AC", description: "Power-saving AC with rapid cooling and remote.", discount: "-10%", image: ac, reviews: 10, originalPrice: "₹42,221.11", discountedPrice: "₹37,999", category: "home-appliances" },
+  { id: 13, name: "SVC Convection Microwave Oven", description: "Multi-function convection microwave for quick meals.", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹14,500.00", discountedPrice: "₹12,999", category: "home-appliances" },
+  { id: 14, name: "SVC 32\" Smart TV - Full HD", description: "Smart TV with HD display and built-in streaming.", discount: "-40%", image: smarttv, images: [smarttv, tv2, tv3], reviews: 1, originalPrice: "₹44,998.33", discountedPrice: "₹26,999", category: "electronics" },
+  { id: 15, name: "SVC 40\" LED TV - 4K Ultra HD", description: "Crisp 4K UHD display with vibrant colors.", discount: "-35%", image: ledtv, images: [ledtv, ledtv2, ledtv3], reviews: 5, originalPrice: "₹59,998.46", discountedPrice: "₹38,999", category: "electronics" },
+  { id: 16, name: "SVC Kent Advanced Water Purifier", description: "Removes 99.9% impurities with RO+UV tech.", discount: "-18%", image: waterpurifier, reviews: 6, originalPrice: "₹27,926.83", discountedPrice: "₹22,499", category: "home-appliances" },
+  { id: 17, name: "SVC 3-Burner Gas Stove", description: "Toughened glass gas stove with 3 burners.", discount: "-15%", image: gasstove, reviews: 5, originalPrice: "₹9,410.59", discountedPrice: "₹7,999", category: "home-appliances" },
+  { id: 18, name: "SVC Powerful Mixer Grinder", description: "High-speed mixer grinder with 3 jars.", discount: "-20%", image: mixer, reviews: 4, originalPrice: "₹9,998.75", discountedPrice: "₹7,999", category: "home-appliances" },
+  { id: 19, name: "SVC High-Speed Grinder with Scrapper", description: "Durable and efficient grinder for daily kitchen use.", discount: "-18%", image: grinder, reviews: 6, originalPrice: "₹15,853.66", discountedPrice: "₹12,999", category: "home-appliances" },
+  { id: 20, name: "SVC Mountain Gear Bicycle", description: "Sturdy gear cycle ideal for both city and trail riding.", discount: "-25%", image: cycle, reviews: 4, originalPrice: "₹17,332.00", discountedPrice: "₹12,999", category: "electronics" },
+  { id: 21, name: "SVC TurboCool Air Cooler", description: "Powerful air cooler with 45L tank capacity.", discount: "-20%", image: aircooler, reviews: 5, originalPrice: "₹16,248.75", discountedPrice: "₹12,999", category: "home-appliances" },
+  { id: 22, name: "SVC Aqua Water Purifier RO+UV", description: "Advanced RO+UV purification with mineral booster.", discount: "-22%", image: purifier, reviews: 3, originalPrice: "₹16,663.46", discountedPrice: "₹12,999", category: "home-appliances" },
+  { id: 23, name: "Stainless Steel Cookware Combo (5 Pc)", description: "Premium quality stainless steel cookware for healthy cooking.", discount: "-28%", image: steelcombo, reviews: 8, originalPrice: "₹16,665.28", discountedPrice: "₹11,999", category: "home-appliances" },
+  { id: 24, name: "Kitchen Cooking Combo – Pans & Pots Set", description: "Complete set of kitchen essentials for everyday use.", discount: "-30%", image: cookware, reviews: 10, originalPrice: "₹14,000.00", discountedPrice: "₹10,999", category: "home-appliances" },
+  { id: 25, name: "Nonstick Cookware Combo Set", description: "Nonstick pans and pots combo – easy cooking and cleaning.", discount: "-26%", image: nonstick, reviews: 7, originalPrice: "₹11,729.73", discountedPrice: "₹7,999", category: "home-appliances" },
+
+  // Batteries (IDs shifted)
+  { id: 26, name: " SVC OKAYA PowerON Inverter Battery", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-34%", image: bat1, reviews: 262, originalPrice: "₹18,700", discountedPrice: "₹18,499", category: "electronics" },
+  { id: 27, name: "SVC OKAYA PRO Power OPTT19054", description: "160Ah Tall Tubular Inverter Battery for Home, Office & Shop.", discount: "-32%", image: bat2, reviews: 167, originalPrice: "₹19,900", discountedPrice: "₹20,100", category: "electronics" },
+  { id: 28, name: "SVC OKAYA PowerON OPSJT19048", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-36%", image: bat3, reviews: 26, originalPrice: "₹18,700", discountedPrice: "₹18,000", category: "electronics" }
 ];
+
 
 
 
