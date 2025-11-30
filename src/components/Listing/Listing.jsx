@@ -104,6 +104,8 @@ import MobileRepairService from "../../assets/Mobile Repair Service.webp";
 import MobileAccessories from "../../assets/Mobile Accessories.jpg";
 import lam from "../../assets/lam.webp";
 import plastic1 from "../../assets/Plastic.png";
+import sim from "../../assets/sim.jpeg";
+
 
 
 
@@ -134,34 +136,34 @@ const categories = [
 const allProducts = [
   { 
     id: 1, 
-    name: "Xerox / Photocopy", 
-    description: "Instant and reliable black & white or color photocopy service with sharp output quality. Suitable for documents, forms, certificates, and all office-related needs. Fast processing ensures you never have to wait long.", 
-    image: XeroxPhotocopy, 
-    category: "Document" 
+    name: "Room Rent", 
+    description: "Clean and comfortable rooms available for daily, weekly, or monthly stays. Suitable for students, travelers, and working professionals.", 
+    image: RoomRent, 
+    category: "Rooms" 
   },
 
-  { 
+   { 
     id: 2, 
-    name: "Printing Service", 
-    description: "High-quality A4 and A3 printing for office documents, resumes, project reports, photos, and more. We ensure clear, professional, and premium print results for all personal and business requirements.", 
-    image: PrintingService, 
-    category: "Document" 
+    name: "Cleaning Materials", 
+    description: "All types of cleaning products including detergents, floor cleaners, brushes, and housekeeping materials for home and business use.", 
+    image: CleaningMaterials, 
+    category: "Plastic-Items" 
   },
 
   { 
     id: 3, 
-    name: "Scanning", 
-    description: "Fast and accurate digital scanning for documents, certificates, photos, IDs, and handwritten pages. Get high-resolution digital copies instantly for online submission or safe storage.", 
-    image: Scanning, 
-    category: "Document" 
+    name: "Gas Sales", 
+    description: "Domestic and commercial LPG cylinder sales with quick delivery and verified safety checks.", 
+    image: GasSales, 
+    category: "Gas-Services" 
   },
 
   { 
     id: 4, 
-    name: "Lamination", 
-    description: "Premium lamination service to protect certificates, ID cards, mark sheets, photos, and important documents from damage, scratches, and moisture. Available in multiple sizes.", 
-    image: lam, 
-    category: "Document" 
+    name: "Car Rental Service", 
+    description: "Well-maintained cars available for rent for personal trips, events, functions, airport rides, and long journeys. Professional drivers and flexible packages.", 
+    image: CarRentalService, 
+    category: "Transport" 
   },
 
   { 
@@ -222,10 +224,10 @@ const allProducts = [
 
   { 
     id: 12, 
-    name: "Car Rental Service", 
-    description: "Well-maintained cars available for rent for personal trips, events, functions, airport rides, and long journeys. Professional drivers and flexible packages.", 
-    image: CarRentalService, 
-    category: "Transport" 
+    name: "Lamination", 
+    description: "Premium lamination service to protect certificates, ID cards, mark sheets, photos, and important documents from damage, scratches, and moisture. Available in multiple sizes.", 
+    image: lam, 
+    category: "Document" 
   },
 
   { 
@@ -240,7 +242,7 @@ const allProducts = [
     id: 14, 
     name: "All Type of Recharge", 
     description: "Mobile, DTH, internet, and data pack recharges for all networks. Fast processing with the best available plans and offers.", 
-    image: MoneyTransfer, 
+    image: sim, 
     category: "Financial" 
   },
 
@@ -270,10 +272,10 @@ const allProducts = [
 
   { 
     id: 18, 
-    name: "Room Rent", 
-    description: "Clean and comfortable rooms available for daily, weekly, or monthly stays. Suitable for students, travelers, and working professionals.", 
-    image: RoomRent, 
-    category: "Rooms" 
+    name: "Xerox / Photocopy", 
+    description: "Instant and reliable black & white or color photocopy service with sharp output quality. Suitable for documents, forms, certificates, and all office-related needs. Fast processing ensures you never have to wait long.", 
+    image: XeroxPhotocopy, 
+    category: "Document" 
   },
 
   { 
@@ -318,10 +320,10 @@ const allProducts = [
 
   { 
     id: 24, 
-    name: "Cleaning Materials", 
-    description: "All types of cleaning products including detergents, floor cleaners, brushes, and housekeeping materials for home and business use.", 
-    image: CleaningMaterials, 
-    category: "Plastic-Items" 
+    name: "Printing Service", 
+    description: "High-quality A4 and A3 printing for office documents, resumes, project reports, photos, and more. We ensure clear, professional, and premium print results for all personal and business requirements.", 
+    image: PrintingService, 
+    category: "Document" 
   },
 
   { 
@@ -334,10 +336,10 @@ const allProducts = [
 
   { 
     id: 26, 
-    name: "Gas Sales", 
-    description: "Domestic and commercial LPG cylinder sales with quick delivery and verified safety checks.", 
-    image: GasSales, 
-    category: "Gas-Services" 
+    name: "Scanning", 
+    description: "Fast and accurate digital scanning for documents, certificates, photos, IDs, and handwritten pages. Get high-resolution digital copies instantly for online submission or safe storage.", 
+    image: Scanning, 
+    category: "Document" 
   },
 
   { 

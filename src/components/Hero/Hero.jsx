@@ -12,31 +12,22 @@ import offer2 from '../../assets/offer2.jpg'; // Replace with real offer image
 
 const slides = [
   {
-    title: "Mobile Sales & Services",
-    description: "Get the best smartphones and expert repair services all in one place.",
-    image: slide1,
-    buttonText: "Explore Mobiles",
-    buttonLink: "/furniture",
-    bgColor: "bg-[#fef5ef]",
-    buttonColor: "bg-red-600"
-  },
-  {
-    title: "Money Transfer",
-    description: "Send and receive money quickly, safely, and without any hassle.",
-    image: slide2,
-    buttonText: "Explore Money Transfer",
+    title: "Real Estate",
+    description: "Buy, sell, or rent properties with trusted guidance and smooth service.",
+    image: slide8,
+    buttonText: "Explore Real Estate",
     buttonLink: "/home-appliances",
     bgColor: "bg-[#f4f4f4]",
     buttonColor: "bg-gray-800"
   },
   {
-    title: "Flight Tickets",
-    description: "Book affordable flight tickets with fast and reliable service.",
-    image: slide3,
-    buttonText: "Explore Flight Tickets",
-    buttonLink: "/electronics",
-    bgColor: "bg-[#eef6f7]",
-    buttonColor: "bg-blue-600"
+    title: "Cleaning Materials & Plastic Items",
+    description: "Find all essential cleaning supplies and quality plastic items at affordable prices.",
+    image: slide7,
+    buttonText: "Explore Products",
+    buttonLink: "/furniture",
+    bgColor: "bg-[#fef5ef]",
+    buttonColor: "bg-red-600"
   },
   {
     title: "Car Rent",
@@ -46,6 +37,15 @@ const slides = [
     buttonLink: "/furniture",
     bgColor: "bg-[#fef5ef]",
     buttonColor: "bg-red-600"
+  },
+  {
+    title: "Flight Tickets",
+    description: "Book affordable flight tickets with fast and reliable service.",
+    image: slide3,
+    buttonText: "Explore Flight Tickets",
+    buttonLink: "/electronics",
+    bgColor: "bg-[#eef6f7]",
+    buttonColor: "bg-blue-600"
   },
   {
     title: "Xerox & Printing",
@@ -66,22 +66,22 @@ const slides = [
     buttonColor: "bg-blue-600"
   },
   {
-    title: "Cleaning Materials & Plastic Items",
-    description: "Find all essential cleaning supplies and quality plastic items at affordable prices.",
-    image: slide7,
-    buttonText: "Explore Products",
-    buttonLink: "/furniture",
-    bgColor: "bg-[#fef5ef]",
-    buttonColor: "bg-red-600"
-  },
-  {
-    title: "Real Estate",
-    description: "Buy, sell, or rent properties with trusted guidance and smooth service.",
-    image: slide8,
-    buttonText: "Explore Real Estate",
+    title: "Money Transfer",
+    description: "Send and receive money quickly, safely, and without any hassle.",
+    image: slide2,
+    buttonText: "Explore Money Transfer",
     buttonLink: "/home-appliances",
     bgColor: "bg-[#f4f4f4]",
     buttonColor: "bg-gray-800"
+  },
+  {
+    title: "Mobile Sales & Services",
+    description: "Get the best smartphones and expert repair services all in one place.",
+    image: slide1,
+    buttonText: "Explore Mobiles",
+    buttonLink: "/furniture",
+    bgColor: "bg-[#fef5ef]",
+    buttonColor: "bg-red-600"
   }
 ];
 
