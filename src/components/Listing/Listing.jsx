@@ -83,7 +83,6 @@ import BusTicketBooking from "../../assets/Bus Ticket Booking.webp";
 import CarRentalService from "../../assets/Car Rental Service.jpg";
 
 import MoneyTransfer from "../../assets/Money Transfer.avif";
-import AllTypeOfRecharge from "../../assets/All-Type-Of-Recharge.jpg";
 import PropertyTaxPayment from "../../assets/Property Tax Payment.jpg";
 import ElectricityBillPayment from "../../assets/Electricity Bill Payment.jpg";
 import WaterBillPayment from "../../assets/Water-Bill-Payment.jpg";
@@ -241,7 +240,7 @@ const allProducts = [
     id: 14, 
     name: "All Type of Recharge", 
     description: "Mobile, DTH, internet, and data pack recharges for all networks. Fast processing with the best available plans and offers.", 
-    image: AllTypeOfRecharge, 
+    image: MoneyTransfer, 
     category: "Financial" 
   },
 
