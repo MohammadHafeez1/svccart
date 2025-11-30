@@ -6,11 +6,15 @@ import { Link, useNavigate } from 'react-router-dom';
 import { IoMenu, IoClose } from 'react-icons/io5';
 
 const categories = [
-  { name: 'Furniture', path: '/furniture' },
-  { name: 'Home Appliances', path: '/home-appliances' },
-  { name: 'Electronics', path: '/electronics' },
-  
+  { name: 'Document', path: '/document' },
+  { name: 'Transport', path: '/transport' },
+  { name: 'Financial', path: '/financial' },
+  { name: 'Rooms', path: '/rooms' },
+  { name: 'Plastic-Items', path: '/plastic-items' },
+  { name: 'Gas-Services', path: '/gas-services' },
+  { name: 'Mobile', path: '/mobile' },
 ];
+
 
 const Navbar = () => {
   const { cartItems } = useCart();
@@ -35,7 +39,7 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full z-50 bg-white shadow">
       {/* Top Bar – Hidden on mobile */}
       <div className="hidden sm:flex bg-gray-100 text-sm text-gray-600 px-4 py-2 justify-between items-center">
-        <span>Welcome to Smart Vision Corporation Group</span>
+        <span>Welcome to CAPITAL MART Pvt Ltd</span>
         <div className="flex gap-4">
           <Link to="/footer" className="hover:text-yellow-600">📧 Contact</Link>
           <Link to="/scheme" className="hover:text-yellow-600">🔐 Login</Link>
@@ -91,10 +95,17 @@ const Navbar = () => {
       <div className="hidden sm:block px-4 pb-3 max-w-screen-xl mx-auto">
         <div className="flex border rounded-lg overflow-hidden shadow-sm">
           <select className="bg-gray-100 px-3 text-sm text-gray-600 outline-none">
-            <option>All Categories</option>
-            <option>Electronics</option>
-            <option>Furniture</option>
-            <option>Home Appliances</option>
+           <option>All Categories</option>
+
+<option>Document</option>
+<option>Transport</option>
+<option>Financial</option>
+<option>Rooms</option>
+<option>Plastic-Items</option>
+<option>Gas-Services</option>
+<option>Mobile</option>
+
+
           </select>
           <input
             type="text"

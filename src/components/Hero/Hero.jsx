@@ -12,73 +12,73 @@ import offer2 from '../../assets/offer2.jpg'; // Replace with real offer image
 
 const slides = [
   {
-    title: "Modern Furniture",
-    description: "Style and comfort for every room in your home.",
+    title: "Mobile Sales & Services",
+    description: "Get the best smartphones and expert repair services all in one place.",
     image: slide1,
-    buttonText: "Shop Furniture",
+    buttonText: "Explore Mobiles",
     buttonLink: "/furniture",
     bgColor: "bg-[#fef5ef]",
     buttonColor: "bg-red-600"
   },
   {
-    title: "Smart Home Appliances",
-    description: "Upgrade your home with the latest smart appliances.",
+    title: "Money Transfer",
+    description: "Send and receive money quickly, safely, and without any hassle.",
     image: slide2,
-    buttonText: "Explore Appliances",
+    buttonText: "Explore Money Transfer",
     buttonLink: "/home-appliances",
     bgColor: "bg-[#f4f4f4]",
     buttonColor: "bg-gray-800"
   },
   {
-    title: "Latest Electronics",
-    description: "Discover the newest tech to power your lifestyle.",
+    title: "Flight Tickets",
+    description: "Book affordable flight tickets with fast and reliable service.",
     image: slide3,
-    buttonText: "Browse Electronics",
+    buttonText: "Explore Flight Tickets",
     buttonLink: "/electronics",
     bgColor: "bg-[#eef6f7]",
     buttonColor: "bg-blue-600"
   },
   {
-    title: "Modern Furniture",
-    description: "Style and comfort for every room in your home.",
+    title: "Car Rent",
+    description: "Rent clean, comfortable cars at the best prices for your travel needs.",
     image: slide4,
-    buttonText: "Shop Furniture",
+    buttonText: "Explore Car Rent",
     buttonLink: "/furniture",
     bgColor: "bg-[#fef5ef]",
     buttonColor: "bg-red-600"
   },
   {
-    title: "Smart Home Appliances",
-    description: "Upgrade your home with the latest smart appliances.",
+    title: "Xerox & Printing",
+    description: "Get high-quality photocopy, printing, and document services instantly.",
     image: slide5,
-    buttonText: "Explore Appliances",
+    buttonText: "Explore Xerox Services",
     buttonLink: "/home-appliances",
     bgColor: "bg-[#f4f4f4]",
     buttonColor: "bg-gray-800"
   },
   {
-    title: "Latest Electronics",
-    description: "Discover the newest tech to power your lifestyle.",
+    title: "Visa Services",
+    description: "Fast and reliable visa assistance for all your travel and work needs.",
     image: slide6,
-    buttonText: "Browse Electronics",
+    buttonText: "Explore Visa Services",
     buttonLink: "/electronics",
     bgColor: "bg-[#eef6f7]",
     buttonColor: "bg-blue-600"
   },
   {
-    title: "Modern Furniture",
-    description: "Style and comfort for every room in your home.",
+    title: "Cleaning Materials & Plastic Items",
+    description: "Find all essential cleaning supplies and quality plastic items at affordable prices.",
     image: slide7,
-    buttonText: "Shop Furniture",
+    buttonText: "Explore Products",
     buttonLink: "/furniture",
     bgColor: "bg-[#fef5ef]",
     buttonColor: "bg-red-600"
   },
   {
-    title: "Smart Home Appliances",
-    description: "Upgrade your home with the latest smart appliances.",
+    title: "Real Estate",
+    description: "Buy, sell, or rent properties with trusted guidance and smooth service.",
     image: slide8,
-    buttonText: "Explore Appliances",
+    buttonText: "Explore Real Estate",
     buttonLink: "/home-appliances",
     bgColor: "bg-[#f4f4f4]",
     buttonColor: "bg-gray-800"

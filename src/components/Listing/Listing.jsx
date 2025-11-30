@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 // Images
 import categoryAll from "../../assets/category-all.jpg";
 import categoryFurniture from "../../assets/category-furniture.jpg";
@@ -59,54 +60,318 @@ import ledtv3 from "../../assets/ledtv3.jpg";
 import bat1 from "../../assets/battery3.jpg";
 import bat2 from "../../assets/battery2.jpg";
 import bat3 from "../../assets/battery3.jpg";
+import flight from "../../assets/flight-cate.png";
+import mobile from "../../assets/mobile-cate.png";
+import gas from "../../assets/gas-cate.png";
+import house from "../../assets/house-cate.jpeg";
+import plastic from "../../assets/plastic-cate.png";
+import money from "../../assets/money-cate.png";
+import docu from "../../assets/document-cate.png";
+
+{/* this is product image */}
+import XeroxPhotocopy from "../../assets/XeroxPhotocopy.jpg";
+import PrintingService from "../../assets/Printing Service.jpg";
+import Scanning from "../../assets/Scanning.jpg";
+import PCCService from "../../assets/pcc.webp";
+import PANCardApplication from "../../assets/PAN Card Application.png";
+import AadharCardUpdate from "../../assets/Aadhar Card Update.webp";
+import VisaAttestation from "../../assets/Visa & Attestation.jpg";
+
+import FlightTicketBooking from "../../assets/Flight Ticket Booking.jpg";
+import TrainTicketBooking from "../../assets/Train Ticket Booking.webp";
+import BusTicketBooking from "../../assets/Bus Ticket Booking.webp";
+import CarRentalService from "../../assets/Car Rental Service.jpg";
+
+import MoneyTransfer from "../../assets/Money Transfer.avif";
+import AllTypeOfRecharge from "../../assets/All Type Of Recharge.jpg";
+import PropertyTaxPayment from "../../assets/Property Tax Payment.jpg";
+import ElectricityBillPayment from "../../assets/Electricity Bill Payment.jpg";
+import WaterBillPayment from "../../assets/Water Bill Payment.jpg";
+
+import RoomRent from "../../assets/Room Rent.jpg";
+import RealEstateService from "../../assets/Real Estate Service.jpg";
+import StudioService from "../../assets/Studio Service.webp";
+import PassportSizePhotos from "../../assets/2.jpg";
+import WeddingPhotoVideos from "../../assets/Wedding Photo & Videos.jpg";
+import DigitalPhotos from "../../assets/Digital Photos.jpg";
+
+import CleaningMaterials from "../../assets/Cleaning Materials.jpg";
+
+import GasSales from "../../assets/Gas Sales.webp";
+import GasStoveService from "../../assets/Gas Stove Service.jpg";
+
+import MobileSales from "../../assets/Mobile Sales.jpg";
+import MobileRepairService from "../../assets/Mobile Repair Service.webp";
+import MobileAccessories from "../../assets/Mobile Accessories.jpg";
+import lam from "../../assets/lam.webp";
+import plastic1 from "../../assets/Plastic.png";
+
+
+
+
+
+
+
 
 
 
 
 const categories = [
   { name: "all", image: categoryAll },
-  { name: "furniture", image: categoryFurniture },
-  { name: "home-appliances", image: categoryHome },
-  { name: "electronics", image: categoryElectronics },
+  { name: "Document", image: docu },
+  { name: "Transport", image: flight },
+  { name: "Financial", image: money },
+  { name: "Rooms", image: house },
+  { name: "Plastic-Items", image: plastic },
+  { name: "Gas-Services", image: gas },
+  { name: "Mobile", image: mobile },
+
+
+
+
+
 ];
 
 const allProducts = [
-  { id: 1, name: "SVC L-Shaped Sofa", description: "Comfortable L-shaped sofa perfect for corner spaces.", discount: "-15%", image: lsofa, images: [lsofa, sofa2, sofa3], reviews: 10, originalPrice: "₹63,529.41", discountedPrice: "₹54,000", category: "furniture" },
-  { id: 2, name: "SVC U-Shaped Luxury Sofa", description: "Spacious U-shaped sofa with plush cushions.", discount: "-20%", image: usofa, images: [usofa, usofa2, usofa3], reviews: 8, originalPrice: "₹1,37,500.00", discountedPrice: "₹1,10,000", category: "furniture" },
-  { id: 3, name: "SVC 3-Seater Fabric Sofa", description: "Stylish and cozy 3-seater fabric sofa.", discount: "-10%", image: threesofa, images: [threesofa, threesofa2, threesofa3], reviews: 15, originalPrice: "₹32,221.11", discountedPrice: "₹28,999", category: "furniture" },
-  { id: 4, name: "SVC Sofa Set (5 Piece)", description: "Complete 5-piece sofa set with modern design.", discount: "-18%", image: setsofa, images: [setsofa, setsofa2, setsofa3], reviews: 12, originalPrice: "₹91,463.41", discountedPrice: "₹74,999", category: "furniture" },
-  { id: 5, name: "SVC Wooden Dining Table Set", description: "Elegant 6-seater dining table with chairs.", discount: "-12%", image: diningtable, images: [diningtable, diningtable2, diningtable3], reviews: 5, originalPrice: "₹45,453.41", discountedPrice: "₹39,999", category: "furniture" },
-  { id: 6, name: "SVC Premium Wardrobe", description: "Spacious wardrobe with shelves and mirror.", discount: "-10%", image: wardrobe, images: [wardrobe, wardrobe2, wardrobe3], reviews: 9, originalPrice: "₹48,887.78", discountedPrice: "₹43,999", category: "furniture" },
-  { id: 7, name: "SVC King Size Bed", description: "Luxury king-size bed with strong wooden frame.", discount: "-14%", image: bed, images: [bed, bed2, bed3], reviews: 7, originalPrice: "₹37,209.30", discountedPrice: "₹32,000", category: "furniture" },
-  { id: 8, name: "SVC Multi-Storage Cupboard", description: "Compact cupboard with multiple storage sections.", discount: "-10%", image: cupboard, images: [cupboard, cupboard2, cupboard3], reviews: 4, originalPrice: "₹16,665.56", discountedPrice: "₹14,999", category: "furniture" },
-  { id: 9, name: "SVC Smart Refrigerator", description: "Energy-efficient double-door refrigerator.", discount: "-8%", image: Refrigerator, reviews: 8, originalPrice: "₹59,391.30", discountedPrice: "₹54,840", category: "home-appliances" },
+  { 
+    id: 1, 
+    name: "Xerox / Photocopy", 
+    description: "Instant and reliable black & white or color photocopy service with sharp output quality. Suitable for documents, forms, certificates, and all office-related needs. Fast processing ensures you never have to wait long.", 
+    image: XeroxPhotocopy, 
+    category: "Document" 
+  },
 
-  // UPDATED id 10 -> Semi-Automatic Washing Machine (discountedPrice ₹27,000)
-  { id: 10, name: "SVC Semi-Automatic Washing Machine", description: "Top-loading semi-automatic washing machine with efficient water use.", discount: "-15%", image: washingmachine, reviews: 11, originalPrice: "₹31,764.71", discountedPrice: "₹27,000", category: "home-appliances" },
+  { 
+    id: 2, 
+    name: "Printing Service", 
+    description: "High-quality A4 and A3 printing for office documents, resumes, project reports, photos, and more. We ensure clear, professional, and premium print results for all personal and business requirements.", 
+    image: PrintingService, 
+    category: "Document" 
+  },
 
-  // NEW item inserted at id 11 -> Fully Automatic Washing Machine (discountedPrice ₹65,000)
-  { id: 11, name: "SVC Fully Automatic Washing Machine", description: "Top-loading fully automatic washing machine with smart features.", discount: "-15%", image: washingmachine2, reviews: 12, originalPrice: "₹76,470.59", discountedPrice: "₹65,000", category: "home-appliances" },
+  { 
+    id: 3, 
+    name: "Scanning", 
+    description: "Fast and accurate digital scanning for documents, certificates, photos, IDs, and handwritten pages. Get high-resolution digital copies instantly for online submission or safe storage.", 
+    image: Scanning, 
+    category: "Document" 
+  },
 
-  // The rest of the items shifted +1 on id compared to original
-  { id: 12, name: "SVC 1.5 Ton Inverter Split AC", description: "Power-saving AC with rapid cooling and remote.", discount: "-10%", image: ac, reviews: 10, originalPrice: "₹42,221.11", discountedPrice: "₹37,999", category: "home-appliances" },
-  { id: 13, name: "SVC Convection Microwave Oven", description: "Multi-function convection microwave for quick meals.", discount: "-12%", image: oven, reviews: 6, originalPrice: "₹14,500.00", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 14, name: "SVC 32\" Smart TV - Full HD", description: "Smart TV with HD display and built-in streaming.", discount: "-40%", image: smarttv, images: [smarttv, tv2, tv3], reviews: 1, originalPrice: "₹44,998.33", discountedPrice: "₹26,999", category: "electronics" },
-  { id: 15, name: "SVC 40\" LED TV - 4K Ultra HD", description: "Crisp 4K UHD display with vibrant colors.", discount: "-35%", image: ledtv, images: [ledtv, ledtv2, ledtv3], reviews: 5, originalPrice: "₹59,998.46", discountedPrice: "₹38,999", category: "electronics" },
-  { id: 16, name: "SVC Kent Advanced Water Purifier", description: "Removes 99.9% impurities with RO+UV tech.", discount: "-18%", image: waterpurifier, reviews: 6, originalPrice: "₹27,926.83", discountedPrice: "₹22,499", category: "home-appliances" },
-  { id: 17, name: "SVC 3-Burner Gas Stove", description: "Toughened glass gas stove with 3 burners.", discount: "-15%", image: gasstove, reviews: 5, originalPrice: "₹9,410.59", discountedPrice: "₹7,999", category: "home-appliances" },
-  { id: 18, name: "SVC Powerful Mixer Grinder", description: "High-speed mixer grinder with 3 jars.", discount: "-20%", image: mixer, reviews: 4, originalPrice: "₹9,998.75", discountedPrice: "₹7,999", category: "home-appliances" },
-  { id: 19, name: "SVC High-Speed Grinder with Scrapper", description: "Durable and efficient grinder for daily kitchen use.", discount: "-18%", image: grinder, reviews: 6, originalPrice: "₹15,853.66", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 20, name: "SVC Mountain Gear Bicycle", description: "Sturdy gear cycle ideal for both city and trail riding.", discount: "-25%", image: cycle, reviews: 4, originalPrice: "₹17,332.00", discountedPrice: "₹12,999", category: "electronics" },
-  { id: 21, name: "SVC TurboCool Air Cooler", description: "Powerful air cooler with 45L tank capacity.", discount: "-20%", image: aircooler, reviews: 5, originalPrice: "₹16,248.75", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 22, name: "SVC Aqua Water Purifier RO+UV", description: "Advanced RO+UV purification with mineral booster.", discount: "-22%", image: purifier, reviews: 3, originalPrice: "₹16,663.46", discountedPrice: "₹12,999", category: "home-appliances" },
-  { id: 23, name: "Stainless Steel Cookware Combo (5 Pc)", description: "Premium quality stainless steel cookware for healthy cooking.", discount: "-28%", image: steelcombo, reviews: 8, originalPrice: "₹16,665.28", discountedPrice: "₹11,999", category: "home-appliances" },
-  { id: 24, name: "Kitchen Cooking Combo – Pans & Pots Set", description: "Complete set of kitchen essentials for everyday use.", discount: "-30%", image: cookware, reviews: 10, originalPrice: "₹14,000.00", discountedPrice: "₹10,999", category: "home-appliances" },
-  { id: 25, name: "Nonstick Cookware Combo Set", description: "Nonstick pans and pots combo – easy cooking and cleaning.", discount: "-26%", image: nonstick, reviews: 7, originalPrice: "₹11,729.73", discountedPrice: "₹7,999", category: "home-appliances" },
+  { 
+    id: 4, 
+    name: "Lamination", 
+    description: "Premium lamination service to protect certificates, ID cards, mark sheets, photos, and important documents from damage, scratches, and moisture. Available in multiple sizes.", 
+    image: lam, 
+    category: "Document" 
+  },
 
-  // Batteries (IDs shifted)
-  { id: 26, name: " SVC OKAYA PowerON Inverter Battery", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-34%", image: bat1, reviews: 262, originalPrice: "₹18,700", discountedPrice: "₹18,499", category: "electronics" },
-  { id: 27, name: "SVC OKAYA PRO Power OPTT19054", description: "160Ah Tall Tubular Inverter Battery for Home, Office & Shop.", discount: "-32%", image: bat2, reviews: 167, originalPrice: "₹19,900", discountedPrice: "₹20,100", category: "electronics" },
-  { id: 28, name: "SVC OKAYA PowerON OPSJT19048", description: "160Ah Super Jumbo Tubular Advanced Inverter Battery.", discount: "-36%", image: bat3, reviews: 26, originalPrice: "₹18,700", discountedPrice: "₹18,000", category: "electronics" }
+  { 
+    id: 5, 
+    name: "PCC Service", 
+    description: "Complete assistance for applying, updating, and processing Police Clearance Certificates (PCC). We guide you through every step for quick and smooth approval.", 
+    image: PCCService, 
+    category: "Document" 
+  },
+
+  { 
+    id: 6, 
+    name: "PAN Card Application", 
+    description: "Support for new PAN card applications, corrections, updates, and reissues. Hassle-free documentation and guided processing for faster approval.", 
+    image: PANCardApplication, 
+    category: "Document" 
+  },
+
+  { 
+    id: 7, 
+    name: "Aadhar Card Update", 
+    description: "Aadhar card correction and update services including name, address, DOB, mobile number, and biometric updates. Quick, smooth, and error-free processing.", 
+    image: AadharCardUpdate, 
+    category: "Document" 
+  },
+
+  { 
+    id: 8, 
+    name: "Visa & Attestation", 
+    description: "Professional assistance for visa stamping, document attestation, embassy verification, and approval processes for all major countries. Fast and trusted service.", 
+    image: VisaAttestation, 
+    category: "Document" 
+  },
+
+  { 
+    id: 9, 
+    name: "Flight Ticket Booking", 
+    description: "Domestic and international flight ticket booking at the best prices. Quick confirmations, zero hassle, and complete travel assistance for all destinations.", 
+    image: FlightTicketBooking, 
+    category: "Transport" 
+  },
+
+  { 
+    id: 10, 
+    name: "Train Ticket Booking", 
+    description: "IRCTC train ticket booking made simple. We help you with tatkal, general, and advance bookings for a smooth travel experience.", 
+    image: TrainTicketBooking, 
+    category: "Transport" 
+  },
+
+  { 
+    id: 11, 
+    name: "Bus Ticket Booking", 
+    description: "Fast and affordable bus ticket booking for all routes. Choose from AC, non-AC, sleeper, semi-sleeper, and luxury buses with instant confirmation.", 
+    image: BusTicketBooking, 
+    category: "Transport" 
+  },
+
+  { 
+    id: 12, 
+    name: "Car Rental Service", 
+    description: "Well-maintained cars available for rent for personal trips, events, functions, airport rides, and long journeys. Professional drivers and flexible packages.", 
+    image: CarRentalService, 
+    category: "Transport" 
+  },
+
+  { 
+    id: 13, 
+    name: "Money Transfer", 
+    description: "Secure and instant domestic money transfers to any bank across India. Reliable service for quick financial support and transactions.", 
+    image: MoneyTransfer, 
+    category: "Financial" 
+  },
+
+  { 
+    id: 14, 
+    name: "All Type of Recharge", 
+    description: "Mobile, DTH, internet, and data pack recharges for all networks. Fast processing with the best available plans and offers.", 
+    image: AllTypeOfRecharge, 
+    category: "Financial" 
+  },
+
+  { 
+    id: 15, 
+    name: "Property Tax Payment", 
+    description: "Complete assistance for paying property tax bills safely and quickly. Avoid long queues and ensure timely submissions.", 
+    image: PropertyTaxPayment, 
+    category: "Financial" 
+  },
+
+  { 
+    id: 16, 
+    name: "Electricity Bill Payment", 
+    description: "Quick electricity bill payment for all state and private electricity boards. Instant confirmation and receipt generation.", 
+    image: ElectricityBillPayment, 
+    category: "Financial" 
+  },
+
+  { 
+    id: 17, 
+    name: "Water Bill Payment", 
+    description: "Fast and error-free water bill payment service for all water supply boards. Get instant receipt and confirmation.", 
+    image: WaterBillPayment, 
+    category: "Financial" 
+  },
+
+  { 
+    id: 18, 
+    name: "Room Rent", 
+    description: "Clean and comfortable rooms available for daily, weekly, or monthly stays. Suitable for students, travelers, and working professionals.", 
+    image: RoomRent, 
+    category: "Rooms" 
+  },
+
+  { 
+    id: 19, 
+    name: "Real Estate Service", 
+    description: "Buy, sell, or rent residential and commercial properties with expert guidance. Transparent deals and professional support.", 
+    image: RealEstateService, 
+    category: "Rooms" 
+  },
+
+  { 
+    id: 20, 
+    name: "Studio Service", 
+    description: "Professional studio setup for photography, videography, product shoots, and creative content creation. High-quality lighting and equipment.", 
+    image: StudioService, 
+    category: "Rooms" 
+  },
+
+  { 
+    id: 21, 
+    name: "Passport Size Photos", 
+    description: "Instant passport-size and visa-size photo service with perfect clarity, lighting, and correct document-size formatting.", 
+    image: PassportSizePhotos, 
+    category: "Rooms" 
+  },
+
+  { 
+    id: 22, 
+    name: "Wedding Photo & Videos", 
+    description: "Premium wedding photography and videography service capturing every beautiful moment with professional equipment.", 
+    image: WeddingPhotoVideos, 
+    category: "Rooms" 
+  },
+
+  { 
+    id: 23, 
+    name: "Digital Photos", 
+    description: "High-quality digital photo editing, enhancement, retouching, and image correction for personal and professional use.", 
+    image: DigitalPhotos, 
+    category: "Rooms" 
+  },
+
+  { 
+    id: 24, 
+    name: "Cleaning Materials", 
+    description: "All types of cleaning products including detergents, floor cleaners, brushes, and housekeeping materials for home and business use.", 
+    image: CleaningMaterials, 
+    category: "Plastic-Items" 
+  },
+
+  { 
+    id: 25, 
+    name: "Plastic Household Items", 
+    description: "Durable and affordable plastic products such as buckets, containers, boxes, kitchenware, and daily-use home items.", 
+    image: plastic1, 
+    category: "Plastic-Items" 
+  },
+
+  { 
+    id: 26, 
+    name: "Gas Sales", 
+    description: "Domestic and commercial LPG cylinder sales with quick delivery and verified safety checks.", 
+    image: GasSales, 
+    category: "Gas-Services" 
+  },
+
+  { 
+    id: 27, 
+    name: "Gas Stove Service", 
+    description: "Repair, cleaning, and maintenance service for all types of gas stoves. Reliable and safe service by trained technicians.", 
+    image: GasStoveService, 
+    category: "Gas-Services" 
+  },
+
+  { 
+    id: 28, 
+    name: "Mobile Sales", 
+    description: "Brand-new smartphones from all top brands at the best prices. Warranty included with fast delivery options.", 
+    image: MobileSales, 
+    category: "Mobile" 
+  },
+
+  { 
+    id: 29, 
+    name: "Mobile Repair Service", 
+    description: "Screen replacement, battery change, software fixing, hardware repair, and diagnostics for all smartphone models.", 
+    image: MobileRepairService, 
+    category: "Mobile" 
+  },
+
+  { 
+    id: 30, 
+    name: "Mobile Accessories", 
+    description: "Wide range of high-quality accessories including chargers, cables, earphones, cases, tempered glass, and more.", 
+    image: MobileAccessories, 
+    category: "Mobile" 
+  }
 ];
 
 
@@ -130,11 +395,18 @@ const Listing = () => {
   const [showCartBanner, setShowCartBanner] = useState(false);
   const [quantities, setQuantities] = useState({});
 
-  useEffect(() => {
-    const path = location.pathname.replace("/", "").toLowerCase();
-    const validCategory = categories.some((c) => c.name === path) ? path : "all";
-    setSelectedCategory(validCategory);
-  }, [location.pathname]);
+useEffect(() => {
+  const path = location.pathname.replace("/", "").toLowerCase();
+
+  // convert category name to URL-friendly format
+  const normalize = (name) => name.toLowerCase().replace(/\s+/g, "-");
+
+  const matchedCategory = categories.find((c) => normalize(c.name) === path);
+
+  setSelectedCategory(matchedCategory ? matchedCategory.name : "all");
+}, [location.pathname]);
+
+
 
   useEffect(() => {
     document.title = `SVC | ${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)}`;
@@ -144,6 +416,9 @@ const Listing = () => {
     furniture: ["sofa", "bed", "table", "chair", "wardrobe", "cupboard"],
     homeappliances: ["refrigerator", "fridge", "washing machine", "ac", "air conditioner", "oven", "microwave", "gas stove", "mixer", "kitchen", "water purifier"],
     electronics: ["tv", "television", "smarttv", "ledtv", "smart", "led"],
+    carRent: ["tv", "television", "smarttv", "ledtv", "smart", "led"],
+
+
   };
 
   const filteredProducts = allProducts.filter((product) => {
@@ -190,7 +465,7 @@ const Listing = () => {
       <main className="max-w-screen-xl mx-auto px-4 py-10">
         <section className="mb-12 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-2">Discover Our Top Deals</h2>
-          <p className="text-gray-600 text-lg">Best-selling SVC products across trending categories</p>
+          <p className="text-gray-600 text-lg">Best-selling CAPITAL MART products across trending categories</p>
         </section>
 
         <div className="flex overflow-x-auto gap-4 mb-12 pb-2 sm:justify-center no-scrollbar">
@@ -257,6 +532,7 @@ const Listing = () => {
                     </div>
 
                     {/* Stock and review section */}
+                    {/*
                     <div className="flex justify-between items-center text-xs text-gray-600 mb-2">
                       <div className="flex items-center gap-1 text-yellow-500">
                         {"★".repeat(4)}<span className="text-gray-500 ml-1">({product.reviews} Reviews)</span>
@@ -279,13 +555,14 @@ const Listing = () => {
                         +
                       </button>
                     </div>
+              */}
 
                     <button
                       onClick={() => handleAddToCart(product)}
                       className="mt-auto bg-blue-100 text-blue-700 font-medium py-2 px-4 rounded-lg flex items-center justify-center gap-2 hover:bg-blue-600 hover:text-white transition-colors group"
                     >
                       <CartIcon />
-                      Add to Cart
+                      Book Now 
                     </button>
                   </div>
                 </div>

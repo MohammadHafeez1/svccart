@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo1.png";
-import PaymentLogos from "../../assets/payment-methods.png"; // Rename your screenshot to this
+import PaymentLogos from "../../assets/payment-methods.png";
 
 const Footer = () => {
   return (
@@ -22,11 +22,10 @@ const Footer = () => {
 
           <div className="p-4 flex flex-col justify-center space-y-2 text-left">
             <h3 className="text-xl font-bold text-gray-800">
-              SMART VISION CORPORATION
+              CAPITAL Group Pvt Ltd
             </h3>
-            <p className="font-medium">
-              Smart Vision Corporation Group Pvt. Ltd.
-            </p>
+            <p className="font-medium">CAPITAL Multi-Service Group Pvt. Ltd.</p>
+
             <p>
               Email:{" "}
               <a
@@ -36,15 +35,36 @@ const Footer = () => {
                 info@svcgroup.in
               </a>
             </p>
+
             <p>GST No: 29AFPFS5082N1ZY</p>
+
             <p>
               <strong>Head Office:</strong>
               <br />
-              Creek Galaxy,
+              D. No. 3-40/1, 3-40/2, Site No. 427
+Katipalla 3rd Block, Church Road
               <br />
-              Pumpwell, Mangalore 
+              Opposite: MRPL Cargo Gate
               <br />
+              
+Mangalore – 575030, Karnataka, India
+              <br />
+              📞 +91 95359 56247
             </p>
+
+            {/* 📌 Google Map Embed */}
+            <div className="mt-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.698510341183!2d74.82809067507682!3d12.991125087326031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU5JzI4LjEiTiA3NMKwNDknNTAuNCJF!5e0!3m2!1sen!2sin!4v1764409271100!5m2!1sen!2sin"
+                width="100%"
+                height="180"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-md"
+              ></iframe>
+            </div>
           </div>
         </div>
 
@@ -80,15 +100,17 @@ const Footer = () => {
               </ul>
             </div>
 
-            
-
             {/* Tags */}
             <div className="flex-1 min-w-[120px]">
               <h3 className="text-base font-semibold text-gray-800 mb-3 text-center md:text-left">
                 Tags
               </h3>
               <ul className="flex flex-wrap gap-2 justify-center md:justify-start">
-                {["Electronics", "Home Appliances", "Furniture"].map((tag) => (
+
+              
+
+                {/* NEW Tags → Document, Rooms, Mobile */}
+                {["Document", "Rooms", "Mobile" ,"Transport","Gas services"].map((tag) => (
                   <li
                     key={tag}
                     className="bg-white border border-gray-300 rounded-full px-4 py-1 text-gray-700 text-xs hover:bg-gray-200 transition-all w-fit"
@@ -98,6 +120,7 @@ const Footer = () => {
                     </Link>
                   </li>
                 ))}
+
               </ul>
             </div>
           </div>

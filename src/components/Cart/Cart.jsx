@@ -73,6 +73,7 @@ const Cart = () => {
             ))}
 
             {/* 🏷️ Coupon Section */}
+            {/*
             <div className="bg-gray-50 rounded-lg p-4 mt-4 flex flex-col md:flex-row gap-4">
               <div className="w-full md:w-1/2">
                 <img
@@ -96,6 +97,7 @@ const Cart = () => {
                 </button>
               </div>
             </div>
+            */}
 
             {/* ✅ Cart Summary */}
             <div className="pt-6 border-t">

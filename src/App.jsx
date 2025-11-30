@@ -62,7 +62,14 @@ const App = () => {
           {/* Category routes */}
           <Route path="/all" element={<Listing />} />
           <Route path="/furniture" element={<Listing />} />
-          <Route path="/home-appliances" element={<Listing />} />
+          <Route path="/document" element={<Listing />} />
+          <Route path="/transport" element={<Listing />} />
+          <Route path="/financial" element={<Listing />} />
+          <Route path="/rooms" element={<Listing />} />
+          <Route path="/Plastic-Items" element={<Listing />} />
+          <Route path="/Gas-Services" element={<Listing />} />
+          <Route path="/mobile" element={<Listing />} />
+
           <Route path="/electronics" element={<Listing />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/scheme" element={<SchemeJoin />} />
