@@ -10,7 +10,7 @@ const Checkout = () => {
   const [messageSent, setMessageSent] = useState(false); // Track if message was sent
 
   const handlePlaceOrder = () => {
-    const whatsappNumber = "919108896247"; // Replace with your real number
+    const whatsappNumber = "919535956247"; // Replace with your real number
     const cartDetails = cartItems
       .map((item) => `• ${item.name} - ₹${item.discountedPrice}`)
       .join("\n");
