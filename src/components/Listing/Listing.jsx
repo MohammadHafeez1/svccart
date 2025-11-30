@@ -83,16 +83,16 @@ import BusTicketBooking from "../../assets/Bus Ticket Booking.webp";
 import CarRentalService from "../../assets/Car Rental Service.jpg";
 
 import MoneyTransfer from "../../assets/Money Transfer.avif";
-import AllTypeOfRecharge from "../../assets/All Type Of Recharge.jpg";
+import AllTypeOfRecharge from "../../assets/All-Type-Of-Recharge.jpg";
 import PropertyTaxPayment from "../../assets/Property Tax Payment.jpg";
 import ElectricityBillPayment from "../../assets/Electricity Bill Payment.jpg";
-import WaterBillPayment from "../../assets/Water Bill Payment.jpg";
+import WaterBillPayment from "../../assets/Water-Bill-Payment.jpg";
 
 import RoomRent from "../../assets/Room Rent.jpg";
 import RealEstateService from "../../assets/Real Estate Service.jpg";
 import StudioService from "../../assets/Studio Service.webp";
 import PassportSizePhotos from "../../assets/2.jpg";
-import WeddingPhotoVideos from "../../assets/Wedding Photo & Videos.jpg";
+import WeddingPhotoVideos from "../../assets/Wedding-Photo-Videos.jpg";
 import DigitalPhotos from "../../assets/Digital Photos.jpg";
 
 import CleaningMaterials from "../../assets/Cleaning Materials.jpg";
