@@ -105,6 +105,7 @@ import MobileAccessories from "../../assets/Mobile Accessories.jpg";
 import lam from "../../assets/lam.webp";
 import plastic1 from "../../assets/Plastic.png";
 import sim from "../../assets/sim.jpeg";
+import tra from "../../assets/transp.jpg";
 
 
 
@@ -136,7 +137,7 @@ const categories = [
 const allProducts = [
   { 
     id: 1, 
-    name: "Room Rent", 
+    name: "Capital Room Rent", 
     description: "Clean and comfortable rooms available for daily, weekly, or monthly stays. Suitable for students, travelers, and working professionals.", 
     image: RoomRent, 
     category: "Rooms" 
@@ -149,6 +150,13 @@ const allProducts = [
     image: CleaningMaterials, 
     category: "Plastic-Items" 
   },
+   { 
+    id: 25, 
+    name: "Plastic Household Items", 
+    description: "Durable and affordable plastic products such as buckets, containers, boxes, kitchenware, and daily-use home items.", 
+    image: plastic1, 
+    category: "Plastic-Items" 
+  },
 
   { 
     id: 3, 
@@ -157,6 +165,7 @@ const allProducts = [
     image: GasSales, 
     category: "Gas-Services" 
   },
+
 
   { 
     id: 4, 
@@ -168,11 +177,18 @@ const allProducts = [
 
   { 
     id: 5, 
-    name: "PCC Service", 
-    description: "Complete assistance for applying, updating, and processing Police Clearance Certificates (PCC). We guide you through every step for quick and smooth approval.", 
-    image: PCCService, 
-    category: "Document" 
+    name: "Mobile Sales", 
+    description: "Brand-new smartphones from all top brands at the best prices. Warranty included with fast delivery options.", 
+    image: MobileSales, 
+    category: "Mobile" 
   },
+   {
+  id: 31,
+  name: "Transport & Logistics",
+  description: "Reliable transport and logistics services including goods delivery, cargo handling, courier support, and doorstep pickup and drop solutions.",
+  image: tra, 
+  category: "Transport"
+},
 
   { 
     id: 6, 
@@ -326,13 +342,7 @@ const allProducts = [
     category: "Document" 
   },
 
-  { 
-    id: 25, 
-    name: "Plastic Household Items", 
-    description: "Durable and affordable plastic products such as buckets, containers, boxes, kitchenware, and daily-use home items.", 
-    image: plastic1, 
-    category: "Plastic-Items" 
-  },
+ 
 
   { 
     id: 26, 
@@ -352,10 +362,10 @@ const allProducts = [
 
   { 
     id: 28, 
-    name: "Mobile Sales", 
-    description: "Brand-new smartphones from all top brands at the best prices. Warranty included with fast delivery options.", 
-    image: MobileSales, 
-    category: "Mobile" 
+    name: "PCC Service", 
+    description: "Complete assistance for applying, updating, and processing Police Clearance Certificates (PCC). We guide you through every step for quick and smooth approval.", 
+    image: PCCService, 
+    category: "Document" 
   },
 
   { 
@@ -372,7 +382,10 @@ const allProducts = [
     description: "Wide range of high-quality accessories including chargers, cables, earphones, cases, tempered glass, and more.", 
     image: MobileAccessories, 
     category: "Mobile" 
-  }
+  },
+
+
+
 ];
 
 
